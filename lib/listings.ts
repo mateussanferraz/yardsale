@@ -330,12 +330,12 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "american-football",
-    title: "American Football",
+    title: "American Football LP1",
     category: "discos",
-    condition: "Lacrado",
-    year: 1999,
-    description:
-      "Edição de aniversário de 2023 (Polyvinyl/Balaclava) do álbum de estreia da banda. Ainda lacrado.",
+    price: 200,
+    condition: "Bem conservado",
+    year: 2023,
+    description: "Edição de 2023 (Polyvinyl/Balaclava) do álbum de estreia da banda.",
     photos: [
       { src: "/images/discos/american-football/01.webp", alt: "American Football - foto 1" },
       { src: "/images/discos/american-football/02.webp", alt: "American Football - foto 2" },
@@ -350,8 +350,9 @@ export const LISTINGS: Listing[] = [
     id: "ana-frango-eletrico",
     title: "Ana Frango Elétrico - Little Electric Chicken Heart",
     category: "discos",
+    price: 150,
     condition: "Lacrado",
-    year: 2019,
+    year: 2026,
     description: "Vinil lacrado, edição Fábrica Rocinante / Três Selos.",
     photos: [
       {
@@ -370,7 +371,9 @@ export const LISTINGS: Listing[] = [
     id: "criolo-amaro-e-dino",
     title: "Criolo, Amaro e Dino",
     category: "discos",
+    price: 100,
     condition: "Lacrado",
+    year: 2026,
     description:
       "Edição limitada e numerada do clube de assinantes Três Selos / Fábrica Rocinante. Ainda lacrado.",
     photos: [
@@ -384,8 +387,9 @@ export const LISTINGS: Listing[] = [
     id: "dona-onete",
     title: "Dona Onete - Feitiço Caboclo",
     category: "discos",
+    price: 100,
     condition: "Lacrado",
-    year: 2012,
+    year: 2026,
     description: "Vinil lacrado, edição do clube de assinantes Três Selos / Fábrica Rocinante.",
     photos: [
       { src: "/images/discos/dona-onete/01.webp", alt: "Dona Onete - Feitiço Caboclo - foto 1" },
@@ -398,7 +402,9 @@ export const LISTINGS: Listing[] = [
     id: "evangelion-finally",
     title: "Evangelion Finally",
     category: "discos",
+    price: 120,
     condition: "Lacrado",
+    year: 2026,
     description: "Vinil lacrado da trilha sonora de Evangelion.",
     photos: [
       { src: "/images/discos/evangelion/01.webp", alt: "Evangelion Finally - foto 1" },
@@ -409,14 +415,15 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "gabriela-leite",
-    title: "Gabriela Leite - Gemúncho",
+    title: "Gabriele Leite - Gunûncho",
     category: "discos",
+    price: 100,
     condition: "Lacrado",
-    year: 2023,
+    year: 2025,
     description: "Vinil lacrado, edição Fábrica Rocinante.",
     photos: [
-      { src: "/images/discos/gabriela-leit/01.webp", alt: "Gabriela Leite - Gemúncho - foto 1" },
-      { src: "/images/discos/gabriela-leit/02.webp", alt: "Gabriela Leite - Gemúncho - foto 2" },
+      { src: "/images/discos/gabriela-leit/01.webp", alt: "Gabriele Leite - Gunûncho - foto 1" },
+      { src: "/images/discos/gabriela-leit/02.webp", alt: "Gabriele Leite - Gunûncho - foto 2" },
     ],
     seller: "mateus",
     sold: false,
@@ -425,9 +432,10 @@ export const LISTINGS: Listing[] = [
     id: "house-of-sugar-alex-g",
     title: "Alex G - House of Sugar",
     category: "discos",
-    condition: "Lacrado",
-    year: 2019,
-    description: "Vinil lacrado, edição Domino Recording Co.",
+    price: 150,
+    condition: "Bem conservado",
+    year: 2020,
+    description: "Edição Domino Recording Co.",
     photos: [
       { src: "/images/discos/house-of-sugar-alex-g/01.webp", alt: "Alex G - House of Sugar - foto 1" },
       { src: "/images/discos/house-of-sugar-alex-g/02.webp", alt: "Alex G - House of Sugar - foto 2" },
@@ -441,10 +449,12 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "kero-kero-bonito",
-    title: "Kero Kero Bonito",
+    title: "Kero Kero Bonito - Civilisation",
     category: "discos",
-    condition: "Lacrado",
-    description: "Vinil lacrado, com arte gráfica em um alfabeto próprio criado pela banda.",
+    price: 140,
+    condition: "Bem conservado",
+    year: 2021,
+    description: "Com arte gráfica em um alfabeto próprio criado pela banda.",
     photos: [
       { src: "/images/discos/kero-kero-bonito/01.webp", alt: "Kero Kero Bonito - foto 1" },
       { src: "/images/discos/kero-kero-bonito/02.webp", alt: "Kero Kero Bonito - foto 2" },
@@ -460,8 +470,9 @@ export const LISTINGS: Listing[] = [
     id: "milton-nascimento-travessia",
     title: "Milton Nascimento - Travessia",
     category: "discos",
+    price: 150,
     condition: "Lacrado",
-    year: 1967,
+    year: 2026,
     description:
       "Reedição lacrada pelo clube de assinantes Três Selos / Fábrica Rocinante do álbum de estreia de Milton Nascimento.",
     photos: [
