@@ -154,7 +154,7 @@ export function ListingGallery({
             onClick={(e) => e.stopPropagation()}
           >
             <div
-              className="relative h-[75vh] w-full"
+              className="relative h-[75vh] w-full touch-pan-y select-none"
               onTouchStart={hasMultiple ? handleTouchStart : undefined}
               onTouchEnd={hasMultiple ? handleTouchEnd : undefined}
             >
@@ -172,7 +172,7 @@ export function ListingGallery({
                     type="button"
                     onClick={() => goTo(index - 1)}
                     aria-label="Foto anterior"
-                    className="absolute top-1/2 left-0 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
+                    className="absolute top-1/2 left-0 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
                   >
                     ‹
                   </button>
@@ -180,12 +180,12 @@ export function ListingGallery({
                     type="button"
                     onClick={() => goTo(index + 1)}
                     aria-label="Próxima foto"
-                    className="absolute top-1/2 right-0 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
+                    className="absolute top-1/2 right-0 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
                   >
                     ›
                   </button>
 
-                  <div className="absolute inset-x-0 bottom-0 flex justify-center gap-2 pb-2">
+                  <div className="absolute inset-x-0 bottom-0 z-10 flex justify-center gap-2 pb-2">
                     {photos.map((_, i) => (
                       <button
                         key={i}
