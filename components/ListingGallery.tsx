@@ -97,7 +97,7 @@ export function ListingGallery({
               type="button"
               onClick={() => goTo(index - 1)}
               aria-label="Foto anterior"
-              className="absolute top-1/2 left-2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-background/80 p-0 text-lg text-foreground opacity-0 shadow transition-opacity group-hover:opacity-100 focus-visible:opacity-100"
+              className="absolute top-1/2 left-2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-black/60 p-0 text-lg text-white opacity-0 shadow transition-opacity group-hover:opacity-100 focus-visible:opacity-100 hover:bg-black/75"
             >
               ‹
             </button>
@@ -105,7 +105,7 @@ export function ListingGallery({
               type="button"
               onClick={() => goTo(index + 1)}
               aria-label="Próxima foto"
-              className="absolute top-1/2 right-2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-background/80 p-0 text-lg text-foreground opacity-0 shadow transition-opacity group-hover:opacity-100 focus-visible:opacity-100"
+              className="absolute top-1/2 right-2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-black/60 p-0 text-lg text-white opacity-0 shadow transition-opacity group-hover:opacity-100 focus-visible:opacity-100 hover:bg-black/75"
             >
               ›
             </button>
@@ -114,8 +114,8 @@ export function ListingGallery({
               {photos.map((_, i) => (
                 <span
                   key={i}
-                  className={`h-1.5 w-1.5 rounded-full transition-colors ${
-                    i === index ? "bg-accent" : "bg-background/70"
+                  className={`h-1.5 w-1.5 rounded-full shadow transition-colors ${
+                    i === index ? "bg-accent" : "bg-white/70"
                   }`}
                 />
               ))}
@@ -144,7 +144,7 @@ export function ListingGallery({
             type="button"
             onClick={() => setLightboxOpen(false)}
             aria-label="Fechar"
-            className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 p-0 text-xl text-white hover:bg-white/20"
+            className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/60 p-0 text-xl text-white hover:bg-black/75"
           >
             ×
           </button>
@@ -172,7 +172,7 @@ export function ListingGallery({
                     type="button"
                     onClick={() => goTo(index - 1)}
                     aria-label="Foto anterior"
-                    className="absolute top-1/2 left-0 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
+                    className="absolute top-1/2 left-0 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/60 p-0 text-2xl text-white hover:bg-black/75"
                   >
                     ‹
                   </button>
@@ -180,7 +180,7 @@ export function ListingGallery({
                     type="button"
                     onClick={() => goTo(index + 1)}
                     aria-label="Próxima foto"
-                    className="absolute top-1/2 right-0 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
+                    className="absolute top-1/2 right-0 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/60 p-0 text-2xl text-white hover:bg-black/75"
                   >
                     ›
                   </button>
@@ -192,8 +192,8 @@ export function ListingGallery({
                         type="button"
                         onClick={() => setIndex(i)}
                         aria-label={`Ir para foto ${i + 1}`}
-                        className={`h-2 w-2 rounded-full p-0 transition-colors ${
-                          i === index ? "bg-white" : "bg-white/40"
+                        className={`h-2 w-2 rounded-full p-0 shadow transition-colors ${
+                          i === index ? "bg-white" : "bg-white/50"
                         }`}
                       />
                     ))}
