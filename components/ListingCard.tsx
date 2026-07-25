@@ -27,6 +27,11 @@ export function ListingCard({ listing }: { listing: Listing }) {
           <span className="w-fit rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
             {listing.condition}
           </span>
+          {listing.year && (
+            <span className="w-fit rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
+              {listing.year}
+            </span>
+          )}
           {listing.languages?.map((language) => (
             <span
               key={language}

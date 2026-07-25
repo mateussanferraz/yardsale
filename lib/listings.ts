@@ -71,6 +71,7 @@ export const SELLERS: Record<SellerId, SellerInfo> = {
 };
 
 export type Condition =
+  | "Lacrado"
   | "Bem conservado"
   | "Com marcas de uso"
   | "Com defeitos ou problemas";
@@ -84,8 +85,9 @@ export interface Listing {
   id: string;
   title: string;
   category: CategorySlug;
-  price: number;
+  price?: number;
   condition: Condition;
+  year?: number;
   languages?: string[];
   description: string;
   photos: Photo[];
@@ -202,7 +204,6 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/daybreak/04.webp", alt: "Daybreak - foto 4" },
       { src: "/images/jogos-de-tabuleiro/daybreak/05.webp", alt: "Daybreak - foto 5" },
       { src: "/images/jogos-de-tabuleiro/daybreak/06.webp", alt: "Daybreak - foto 6" },
-      { src: "/images/jogos-de-tabuleiro/daybreak/07.webp", alt: "Daybreak - foto 7" },
     ],
     seller: "mateus",
     sold: false,
@@ -328,28 +329,146 @@ export const LISTINGS: Listing[] = [
     sold: false,
   },
   {
-    id: "legiao-urbana-dois",
-    title: "Legião Urbana - Dois (LP)",
+    id: "american-football",
+    title: "American Football",
     category: "discos",
-    price: 90,
-    condition: "Com marcas de uso",
-    description: "Capa com leve desgaste nas bordas, disco toca sem chiados relevantes.",
+    condition: "Lacrado",
+    year: 1999,
+    description:
+      "Edição de aniversário de 2023 (Polyvinyl/Balaclava) do álbum de estreia da banda. Ainda lacrado.",
     photos: [
-      { src: "/images/discos/legiao-urbana-1.svg", alt: "Legião Urbana - Dois - foto 1" },
-      { src: "/images/discos/legiao-urbana-2.svg", alt: "Legião Urbana - Dois - foto 2" },
+      { src: "/images/discos/american-football/01.webp", alt: "American Football - foto 1" },
+      { src: "/images/discos/american-football/02.webp", alt: "American Football - foto 2" },
+      { src: "/images/discos/american-football/03.webp", alt: "American Football - foto 3" },
+      { src: "/images/discos/american-football/04.webp", alt: "American Football - foto 4" },
+      { src: "/images/discos/american-football/05.webp", alt: "American Football - foto 5" },
     ],
     seller: "mateus",
     sold: false,
   },
   {
-    id: "joao-gilberto",
-    title: "João Gilberto - Chega de Saudade (LP)",
+    id: "ana-frango-eletrico",
+    title: "Ana Frango Elétrico - Little Electric Chicken Heart",
     category: "discos",
-    price: 150,
-    condition: "Bem conservado",
-    description: "Prensagem nacional, capa e disco muito bem conservados.",
-    photos: [],
-    seller: "bella",
+    condition: "Lacrado",
+    year: 2019,
+    description: "Vinil lacrado, edição Fábrica Rocinante / Três Selos.",
+    photos: [
+      {
+        src: "/images/discos/ana-frango-eletrico/01.webp",
+        alt: "Ana Frango Elétrico - Little Electric Chicken Heart - foto 1",
+      },
+      {
+        src: "/images/discos/ana-frango-eletrico/02.webp",
+        alt: "Ana Frango Elétrico - Little Electric Chicken Heart - foto 2",
+      },
+    ],
+    seller: "mateus",
+    sold: false,
+  },
+  {
+    id: "criolo-amaro-e-dino",
+    title: "Criolo, Amaro e Dino",
+    category: "discos",
+    condition: "Lacrado",
+    description:
+      "Edição limitada e numerada do clube de assinantes Três Selos / Fábrica Rocinante. Ainda lacrado.",
+    photos: [
+      { src: "/images/discos/criolo/01.webp", alt: "Criolo, Amaro e Dino - foto 1" },
+      { src: "/images/discos/criolo/02.webp", alt: "Criolo, Amaro e Dino - foto 2" },
+    ],
+    seller: "mateus",
+    sold: false,
+  },
+  {
+    id: "dona-onete",
+    title: "Dona Onete - Feitiço Caboclo",
+    category: "discos",
+    condition: "Lacrado",
+    year: 2012,
+    description: "Vinil lacrado, edição do clube de assinantes Três Selos / Fábrica Rocinante.",
+    photos: [
+      { src: "/images/discos/dona-onete/01.webp", alt: "Dona Onete - Feitiço Caboclo - foto 1" },
+      { src: "/images/discos/dona-onete/02.webp", alt: "Dona Onete - Feitiço Caboclo - foto 2" },
+    ],
+    seller: "mateus",
+    sold: false,
+  },
+  {
+    id: "evangelion-finally",
+    title: "Evangelion Finally",
+    category: "discos",
+    condition: "Lacrado",
+    description: "Vinil lacrado da trilha sonora de Evangelion.",
+    photos: [
+      { src: "/images/discos/evangelion/01.webp", alt: "Evangelion Finally - foto 1" },
+      { src: "/images/discos/evangelion/02.webp", alt: "Evangelion Finally - foto 2" },
+    ],
+    seller: "mateus",
+    sold: false,
+  },
+  {
+    id: "gabriela-leite",
+    title: "Gabriela Leite - Gemúncho",
+    category: "discos",
+    condition: "Lacrado",
+    year: 2023,
+    description: "Vinil lacrado, edição Fábrica Rocinante.",
+    photos: [
+      { src: "/images/discos/gabriela-leit/01.webp", alt: "Gabriela Leite - Gemúncho - foto 1" },
+      { src: "/images/discos/gabriela-leit/02.webp", alt: "Gabriela Leite - Gemúncho - foto 2" },
+    ],
+    seller: "mateus",
+    sold: false,
+  },
+  {
+    id: "house-of-sugar-alex-g",
+    title: "Alex G - House of Sugar",
+    category: "discos",
+    condition: "Lacrado",
+    year: 2019,
+    description: "Vinil lacrado, edição Domino Recording Co.",
+    photos: [
+      { src: "/images/discos/house-of-sugar-alex-g/01.webp", alt: "Alex G - House of Sugar - foto 1" },
+      { src: "/images/discos/house-of-sugar-alex-g/02.webp", alt: "Alex G - House of Sugar - foto 2" },
+      { src: "/images/discos/house-of-sugar-alex-g/03.webp", alt: "Alex G - House of Sugar - foto 3" },
+      { src: "/images/discos/house-of-sugar-alex-g/04.webp", alt: "Alex G - House of Sugar - foto 4" },
+      { src: "/images/discos/house-of-sugar-alex-g/05.webp", alt: "Alex G - House of Sugar - foto 5" },
+      { src: "/images/discos/house-of-sugar-alex-g/06.webp", alt: "Alex G - House of Sugar - foto 6" },
+    ],
+    seller: "mateus",
+    sold: false,
+  },
+  {
+    id: "kero-kero-bonito",
+    title: "Kero Kero Bonito",
+    category: "discos",
+    condition: "Lacrado",
+    description: "Vinil lacrado, com arte gráfica em um alfabeto próprio criado pela banda.",
+    photos: [
+      { src: "/images/discos/kero-kero-bonito/01.webp", alt: "Kero Kero Bonito - foto 1" },
+      { src: "/images/discos/kero-kero-bonito/02.webp", alt: "Kero Kero Bonito - foto 2" },
+      { src: "/images/discos/kero-kero-bonito/03.webp", alt: "Kero Kero Bonito - foto 3" },
+      { src: "/images/discos/kero-kero-bonito/04.webp", alt: "Kero Kero Bonito - foto 4" },
+      { src: "/images/discos/kero-kero-bonito/05.webp", alt: "Kero Kero Bonito - foto 5" },
+      { src: "/images/discos/kero-kero-bonito/06.webp", alt: "Kero Kero Bonito - foto 6" },
+    ],
+    seller: "mateus",
+    sold: false,
+  },
+  {
+    id: "milton-nascimento-travessia",
+    title: "Milton Nascimento - Travessia",
+    category: "discos",
+    condition: "Lacrado",
+    year: 1967,
+    description:
+      "Reedição lacrada pelo clube de assinantes Três Selos / Fábrica Rocinante do álbum de estreia de Milton Nascimento.",
+    photos: [
+      { src: "/images/discos/milton-nascimento/01.webp", alt: "Milton Nascimento - Travessia - foto 1" },
+      { src: "/images/discos/milton-nascimento/02.webp", alt: "Milton Nascimento - Travessia - foto 2" },
+    ],
+    seller: "mateus",
     sold: false,
   },
 ];
