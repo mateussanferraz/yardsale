@@ -144,18 +144,20 @@ export function ListingGallery({
             type="button"
             onClick={() => setLightboxOpen(false)}
             aria-label="Fechar"
-            className="absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 p-0 text-xl text-white hover:bg-white/20"
+            className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 p-0 text-xl text-white hover:bg-white/20"
           >
             ×
           </button>
 
           <div
-            className="relative flex h-full w-full max-w-3xl items-center justify-center"
+            className="relative flex h-full w-full max-w-3xl flex-col items-center justify-center gap-3"
             onClick={(e) => e.stopPropagation()}
-            onTouchStart={hasMultiple ? handleTouchStart : undefined}
-            onTouchEnd={hasMultiple ? handleTouchEnd : undefined}
           >
-            <div className="relative h-[80vh] w-full">
+            <div
+              className="relative h-[75vh] w-full"
+              onTouchStart={hasMultiple ? handleTouchStart : undefined}
+              onTouchEnd={hasMultiple ? handleTouchEnd : undefined}
+            >
               <Image
                 src={withBasePath(photos[index].src)}
                 alt={photos[index].alt}
@@ -163,41 +165,47 @@ export function ListingGallery({
                 unoptimized
                 className="object-contain"
               />
+
+              {hasMultiple && (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => goTo(index - 1)}
+                    aria-label="Foto anterior"
+                    className="absolute top-1/2 left-0 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => goTo(index + 1)}
+                    aria-label="Próxima foto"
+                    className="absolute top-1/2 right-0 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
+                  >
+                    ›
+                  </button>
+
+                  <div className="absolute inset-x-0 bottom-0 flex justify-center gap-2 pb-2">
+                    {photos.map((_, i) => (
+                      <button
+                        key={i}
+                        type="button"
+                        onClick={() => setIndex(i)}
+                        aria-label={`Ir para foto ${i + 1}`}
+                        className={`h-2 w-2 rounded-full p-0 transition-colors ${
+                          i === index ? "bg-white" : "bg-white/40"
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
 
-            {hasMultiple && (
-              <>
-                <button
-                  type="button"
-                  onClick={() => goTo(index - 1)}
-                  aria-label="Foto anterior"
-                  className="absolute top-1/2 left-0 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
-                >
-                  ‹
-                </button>
-                <button
-                  type="button"
-                  onClick={() => goTo(index + 1)}
-                  aria-label="Próxima foto"
-                  className="absolute top-1/2 right-0 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 p-0 text-2xl text-white hover:bg-white/20"
-                >
-                  ›
-                </button>
-
-                <div className="absolute inset-x-0 bottom-0 flex justify-center gap-2 pb-2">
-                  {photos.map((_, i) => (
-                    <button
-                      key={i}
-                      type="button"
-                      onClick={() => setIndex(i)}
-                      aria-label={`Ir para foto ${i + 1}`}
-                      className={`h-2 w-2 rounded-full p-0 transition-colors ${
-                        i === index ? "bg-white" : "bg-white/40"
-                      }`}
-                    />
-                  ))}
-                </div>
-              </>
+            {photos[index].alt && (
+              <p className="line-clamp-2 max-w-full px-4 text-center text-sm text-white/80">
+                {photos[index].alt}
+              </p>
             )}
           </div>
         </div>
