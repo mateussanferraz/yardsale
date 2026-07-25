@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { CategoryIcon } from "./CategoryIcon";
 import { CategorySlug, Photo } from "@/lib/listings";
+import { withBasePath } from "@/lib/basePath";
 
 export function ListingGallery({
   photos,
@@ -76,7 +77,7 @@ export function ListingGallery({
             aria-label={`Ampliar foto de ${title}`}
           >
             <Image
-              src={photos[index].src}
+              src={withBasePath(photos[index].src)}
               alt={photos[index].alt}
               fill
               unoptimized
@@ -156,7 +157,7 @@ export function ListingGallery({
           >
             <div className="relative h-[80vh] w-full">
               <Image
-                src={photos[index].src}
+                src={withBasePath(photos[index].src)}
                 alt={photos[index].alt}
                 fill
                 unoptimized
