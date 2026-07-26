@@ -3,6 +3,7 @@ import { ListingCard } from "./ListingCard";
 import { CategoryIcon } from "./CategoryIcon";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { RoupasGrid } from "./RoupasGrid";
 
 export function CategoryPageContent({ slug }: { slug: CategorySlug }) {
   const category = getCategory(slug);
@@ -24,11 +25,15 @@ export function CategoryPageContent({ slug }: { slug: CategorySlug }) {
         </div>
 
         {listings.length > 0 ? (
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {listings.map((listing) => (
-              <ListingCard key={listing.id} listing={listing} />
-            ))}
-          </div>
+          slug === "roupas" ? (
+            <RoupasGrid listings={listings} />
+          ) : (
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {listings.map((listing) => (
+                <ListingCard key={listing.id} listing={listing} />
+              ))}
+            </div>
+          )
         ) : (
           <p className="text-sm text-muted-foreground">
             Ainda não há itens nessa categoria. Volte em breve.

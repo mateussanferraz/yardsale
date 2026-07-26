@@ -30,6 +30,33 @@ const paths: Record<CategorySlug, React.ReactNode> = {
       <circle cx="12" cy="12" r="2.4" />
     </>
   ),
+  "objetos-gerais": (
+    <>
+      <path d="M4 8 L12 4 L20 8 L12 12 Z" />
+      <path d="M4 8 V16 L12 20 V12" />
+      <path d="M20 8 V16 L12 20" />
+    </>
+  ),
+  cozinha: (
+    <>
+      <path d="M4 10 H18 V13 C18 16.5 15.5 19 12 19 C8.5 19 6 16.5 6 13 V10 Z" />
+      <path d="M18 11 H19.5 C20.5 11 21 11.5 21 12.5 C21 13.5 20.5 14 19.5 14 H18" />
+      <path d="M8 8 V5 M12 8 V5 M16 8 V5" />
+    </>
+  ),
+  livros: (
+    <>
+      <path d="M12 6 C10.5 5 8 4.5 5 5 V17 C8 16.5 10.5 17 12 18" />
+      <path d="M12 6 C13.5 5 16 4.5 19 5 V17 C16 16.5 13.5 17 12 18" />
+      <path d="M12 6 V18" />
+    </>
+  ),
+  eletronicos: (
+    <>
+      <rect x="4" y="5" width="16" height="11" rx="1.5" />
+      <path d="M9 19 H15 M12 16 V19" />
+    </>
+  ),
 };
 
 export function CategoryIcon({
