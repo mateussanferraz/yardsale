@@ -874,7 +874,9 @@ export const LISTINGS: Listing[] = [
     brand: "Democrata",
     color: "Marrom",
     size: "41",
-    description: "Bota da Democrata, marrom, tamanho 41.",
+    condition: "Com marcas de uso",
+    description:
+      "Bota da Democrata, marrom, tamanho 41. Couro com vincos de uso e sola com marcas de desgaste, sem danos.",
     photos: [
       { src: "/images/sapatos/bota-democrata-marrom-41/01.webp", alt: "Bota - foto 1" },
       { src: "/images/sapatos/bota-democrata-marrom-41/02.webp", alt: "Bota - foto 2" },
@@ -892,7 +894,9 @@ export const LISTINGS: Listing[] = [
     brand: "Democrata",
     color: "Café",
     size: "41",
-    description: "Sapato da Democrata, café, tamanho 41.",
+    condition: "Com marcas de uso",
+    description:
+      "Sapato da Democrata, café, tamanho 41. Vincos de flexão no bico pelo uso, sem danos.",
     photos: [
       { src: "/images/sapatos/sapato-democrata-cafe-41/01.webp", alt: "Sapato - foto 1" },
       { src: "/images/sapatos/sapato-democrata-cafe-41/02.webp", alt: "Sapato - foto 2" },
@@ -910,7 +914,9 @@ export const LISTINGS: Listing[] = [
     price: 120,
     color: "Vermelho",
     size: "41",
-    description: "Tênis Busenitz da Adidas, vermelho, tamanho 41.",
+    condition: "Com marcas de uso",
+    description:
+      "Tênis Busenitz da Adidas, vermelho, tamanho 41. Sola com sujeira/desgaste visível, camurça gasta nos pontos de pressão e um pequeno desfiado na gola interna de um dos pés.",
     photos: [
       { src: "/images/sapatos/tenis-adidas-busenitz-vermelho-41/01.webp", alt: "Tenis Busenitz - foto 1" },
       { src: "/images/sapatos/tenis-adidas-busenitz-vermelho-41/02.webp", alt: "Tenis Busenitz - foto 2" },
@@ -927,7 +933,9 @@ export const LISTINGS: Listing[] = [
     price: 80,
     color: "Bordô-Vinho",
     size: "41",
-    description: "Tênis da Cavalera, bordô-vinho, tamanho 41.",
+    condition: "Com marcas de uso",
+    description:
+      "Tênis da Cavalera, bordô-vinho, tamanho 41. Camurça amassada/desbotada e sola com sujeira nas bordas, sem danos.",
     photos: [
       { src: "/images/sapatos/tenis-cavalera-bordo-vinho-41/01.webp", alt: "Tenis - foto 1" },
       { src: "/images/sapatos/tenis-cavalera-bordo-vinho-41/02.webp", alt: "Tenis - foto 2" },
@@ -946,7 +954,9 @@ export const LISTINGS: Listing[] = [
     price: 200,
     color: "Vermelho e branco",
     size: "41",
-    description: "Tênis Blazers 77 da Nike, vermelho e branco, tamanho 41.",
+    condition: "Com marcas de uso",
+    description:
+      "Tênis Blazers 77 da Nike, vermelho e branco, tamanho 41. Sola com leve sujeira/amarelamento, camurça em bom estado.",
     photos: [
       { src: "/images/sapatos/tenis-nike-blazers-77-vermelho-e-branco-41/01.webp", alt: "Tenis Blazers 77 - foto 1" },
       { src: "/images/sapatos/tenis-nike-blazers-77-vermelho-e-branco-41/02.webp", alt: "Tenis Blazers 77 - foto 2" },
@@ -965,6 +975,7 @@ export const LISTINGS: Listing[] = [
     price: 150,
     color: "Branco e roxo",
     size: "37",
+    condition: "Bem conservado",
     description: "Tênis SB Chron 2 da Nike, branco e roxo, tamanho 37.",
     photos: [
       { src: "/images/sapatos/tenis-nike-sb-chron-2-branco-e-roxo-37/01.webp", alt: "Tenis SB Chron 2 - foto 1" },
@@ -984,6 +995,7 @@ export const LISTINGS: Listing[] = [
     price: 120,
     color: "Branco e roxo",
     size: "41",
+    condition: "Bem conservado",
     description: "Tênis SB Chron 2 da Nike, branco e roxo, tamanho 41.",
     photos: [
       { src: "/images/sapatos/tenis-nike-sb-chron-2-branco-e-roxo-41/01.webp", alt: "Tenis SB Chron 2 - foto 1" },
@@ -1002,7 +1014,9 @@ export const LISTINGS: Listing[] = [
     price: 100,
     color: "Preto",
     size: "37",
-    description: "Tênis Oldskool da Vans, preto, tamanho 37.",
+    condition: "Com defeitos ou problemas",
+    description:
+      "Tênis Oldskool da Vans, preto, tamanho 37. Forro da gola rasgado nos dois pés, com espuma exposta.",
     photos: [
       { src: "/images/sapatos/tenis-vans-oldskool-preto/01.webp", alt: "Tenis Oldskool - foto 1" },
       { src: "/images/sapatos/tenis-vans-oldskool-preto/02.webp", alt: "Tenis Oldskool - foto 2" },
@@ -1019,7 +1033,9 @@ export const LISTINGS: Listing[] = [
     price: 400,
     color: "Azul e branco",
     size: "41",
-    description: "Tênis Oldskool VAN GOGH (Vineyard) da Vans, azul e branco, tamanho 41. Tênis de colecao, fragil e delicado, usado duas vezes.",
+    condition: "Com marcas de uso",
+    description:
+      "Tênis Oldskool VAN GOGH (Vineyard) da Vans, azul e branco, tamanho 41. Tênis de coleção, frágil e delicado, usado duas vezes. Leve sujeira/manchas na sola.",
     photos: [
       { src: "/images/sapatos/tenis-vans-oldskool-van-gogh-vineyard-azul-e-branco-41/01.webp", alt: "Tenis Oldskool VAN GOGH (Vineyard) - foto 1" },
       { src: "/images/sapatos/tenis-vans-oldskool-van-gogh-vineyard-azul-e-branco-41/02.webp", alt: "Tenis Oldskool VAN GOGH (Vineyard) - foto 2" },
