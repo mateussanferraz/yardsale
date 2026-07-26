@@ -7,7 +7,8 @@ export type CategorySlug =
   | "objetos-gerais"
   | "cozinha"
   | "livros"
-  | "eletronicos";
+  | "eletronicos"
+  | "acessorios";
 
 export interface Category {
   slug: CategorySlug;
@@ -80,6 +81,13 @@ export const CATEGORIES: Category[] = [
     singular: "aparelho",
     plural: "aparelhos",
     description: "Eletrônicos testados e funcionando antes de anunciar.",
+  },
+  {
+    slug: "acessorios",
+    label: "Acessórios",
+    singular: "acessório",
+    plural: "acessórios",
+    description: "Bolsas, cintos e outros acessórios em bom estado.",
   },
 ];
 
@@ -1717,6 +1725,89 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/vitrola-sony-ps-lx310bt-preta-r-1500/02.webp", alt: "Vitrola PS-LX310BT - foto 2" },
       { src: "/images/eletronicos/vitrola-sony-ps-lx310bt-preta-r-1500/03.webp", alt: "Vitrola PS-LX310BT - foto 3" },
       { src: "/images/eletronicos/vitrola-sony-ps-lx310bt-preta-r-1500/04.webp", alt: "Vitrola PS-LX310BT - foto 4" },
+    ],
+    seller: "mateus",
+    status: "disponivel",
+  },
+  {
+    id: "bolsa-mango-bolsa-com-alca-de-corrente-vinho-r-50",
+    title: "Bolsa com Alça de Corrente",
+    category: "acessorios",
+    price: 50,
+    brand: "Mango",
+    color: "Vinho",
+    description: "Bolsa com alça de corrente, da Mango, vinho.",
+    photos: [
+      { src: "/images/acessorios/bolsa-mango-bolsa-com-alca-de-corrente-vinho-r-50/01.webp", alt: "Bolsa com Alça de Corrente - foto 1" },
+      { src: "/images/acessorios/bolsa-mango-bolsa-com-alca-de-corrente-vinho-r-50/02.webp", alt: "Bolsa com Alça de Corrente - foto 2" },
+      { src: "/images/acessorios/bolsa-mango-bolsa-com-alca-de-corrente-vinho-r-50/03.webp", alt: "Bolsa com Alça de Corrente - foto 3" },
+      { src: "/images/acessorios/bolsa-mango-bolsa-com-alca-de-corrente-vinho-r-50/04.webp", alt: "Bolsa com Alça de Corrente - foto 4" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "mochila-lego-verde-r-150",
+    title: "Mochila Lego",
+    category: "acessorios",
+    price: 150,
+    brand: "Lego",
+    color: "Verde",
+    condition: "Bem conservado",
+    description: "Mochila da Lego, verde, com os bolsos frontais em formato de peça de Lego.",
+    photos: [
+      { src: "/images/acessorios/mochila-lego-verde-r-150/01.webp", alt: "Mochila Lego - foto 1" },
+      { src: "/images/acessorios/mochila-lego-verde-r-150/02.webp", alt: "Mochila Lego - foto 2" },
+      { src: "/images/acessorios/mochila-lego-verde-r-150/03.webp", alt: "Mochila Lego - foto 3" },
+      { src: "/images/acessorios/mochila-lego-verde-r-150/04.webp", alt: "Mochila Lego - foto 4" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25",
+    title: "Óculos de Sol Colorado",
+    category: "acessorios",
+    price: 25,
+    brand: "Colorado",
+    color: "Preto e floral",
+    condition: "Bem conservado",
+    description: "Óculos de sol da Colorado, lentes pretas com armação florida, acompanha case.",
+    photos: [
+      { src: "/images/acessorios/oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25/01.webp", alt: "Óculos de Sol Colorado - foto 1" },
+      { src: "/images/acessorios/oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25/02.webp", alt: "Óculos de Sol Colorado - foto 2" },
+      { src: "/images/acessorios/oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25/03.webp", alt: "Óculos de Sol Colorado - foto 3" },
+      { src: "/images/acessorios/oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25/04.webp", alt: "Óculos de Sol Colorado - foto 4" },
+      { src: "/images/acessorios/oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25/05.webp", alt: "Óculos de Sol Colorado - foto 5" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "caixas-de-som-edifier-r2750db-preto",
+    title: "Caixas de Som R2750DB",
+    category: "eletronicos",
+    brand: "Edifier",
+    color: "Preto",
+    description: "Caixas de som Edifier R2750DB, pretas.",
+    photos: [
+      { src: "/images/eletronicos/caixas-de-som-edifier-r2750db-preto/01.webp", alt: "Caixas de Som R2750DB - foto 1" },
+      { src: "/images/eletronicos/caixas-de-som-edifier-r2750db-preto/02.webp", alt: "Caixas de Som R2750DB - foto 2" },
+      { src: "/images/eletronicos/caixas-de-som-edifier-r2750db-preto/03.webp", alt: "Caixas de Som R2750DB - foto 3" },
+    ],
+    seller: "mateus",
+    status: "disponivel",
+  },
+  {
+    id: "passadeira-a-vapor-cadence-lisser-110v",
+    title: "Passadeira a Vapor Lisser",
+    category: "eletronicos",
+    brand: "Cadence",
+    size: "110V",
+    description: "Passadeira a vapor Cadence Lisser, 110V.",
+    photos: [
+      { src: "/images/eletronicos/passadeira-a-vapor-cadence-lisser-110v/01.webp", alt: "Passadeira a Vapor Lisser - foto 1" },
+      { src: "/images/eletronicos/passadeira-a-vapor-cadence-lisser-110v/02.webp", alt: "Passadeira a Vapor Lisser - foto 2" },
     ],
     seller: "mateus",
     status: "disponivel",

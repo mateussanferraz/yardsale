@@ -57,6 +57,12 @@ const paths: Record<CategorySlug, React.ReactNode> = {
       <path d="M9 19 H15 M12 16 V19" />
     </>
   ),
+  acessorios: (
+    <>
+      <rect x="4" y="9" width="16" height="11" rx="2" />
+      <path d="M8 9 V7 C8 5 9.5 4 12 4 C14.5 4 16 5 16 7 V9" />
+    </>
+  ),
 };
 
 export function CategoryIcon({
