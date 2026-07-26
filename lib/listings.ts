@@ -113,6 +113,8 @@ export interface Photo {
   alt: string;
 }
 
+export type ListingStatus = "disponivel" | "reservado" | "vendido";
+
 export interface Listing {
   id: string;
   title: string;
@@ -129,7 +131,9 @@ export interface Listing {
   description: string;
   photos: Photo[];
   seller: SellerId;
-  sold: boolean;
+  status: ListingStatus;
+  /** Internal control only — never rendered on the site. Who reserved/bought the item. */
+  buyerName?: string;
 }
 
 export const LISTINGS: Listing[] = [
@@ -151,7 +155,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/sky-team/06.webp", alt: "Sky Team - foto 6" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "cores-com-dicas",
@@ -171,7 +175,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/cores-com-dicas/06.webp", alt: "Cores com Dicas - foto 6" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "heat-pedal-to-the-metal",
@@ -201,7 +205,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/heat-pedal-to-the-metal/16.webp", alt: "Heat: Pedal to the Metal - foto 16" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "robinson-crusoe",
@@ -223,7 +227,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/robinson-crusoe/08.webp", alt: "Robinson Crusoe - foto 8" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "daybreak",
@@ -243,7 +247,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/daybreak/06.webp", alt: "Daybreak - foto 6" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "harmonies",
@@ -266,7 +270,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/harmonies/09.webp", alt: "Harmonies - foto 9" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "spirit-island",
@@ -285,7 +289,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/spirit-island/05.webp", alt: "Spirit Island - foto 5" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "blazer-grafite-48r",
@@ -300,7 +304,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/blazer-grafite-48r/03.webp", alt: "Blazer - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "blazer-pentel-gelo-tamanho-50",
@@ -316,7 +320,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/blazer-pentel-gelo-tamanho-50/03.webp", alt: "Blazer - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "blusa-fleece-decathlon-preto-g",
@@ -332,7 +336,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/blusa-fleece-decathlon-preto-g/03.webp", alt: "Blusa Fleece - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-manga-curta-artesanal-sem-marca-branca-com-detalhes-em-vermelho-e-azul-g",
@@ -348,7 +352,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-curta-artesanal-sem-marca-branca-com-detalhes-em-vermelho-e-azul-g/03.webp", alt: "Camisa Manga Curta - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-manga-curta-central-beach-g",
@@ -362,7 +366,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-curta-central-beach-g/02.webp", alt: "Camisa Manga Curta - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-manga-curta-hering-verde-com-detalhes-em-branco-g",
@@ -378,7 +382,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-curta-hering-verde-com-detalhes-em-branco-g/03.webp", alt: "Camisa Manga Curta - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-manga-curta-h-m-branca-com-detalhes-em-preto-m",
@@ -394,7 +398,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-curta-h-m-branca-com-detalhes-em-preto-m/03.webp", alt: "Camisa Manga Curta - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-manga-curta-pool-azul-g",
@@ -410,7 +414,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-curta-pool-azul-g/03.webp", alt: "Camisa Manga Curta - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-manga-longa-marfino-azul-escuro-gg",
@@ -426,7 +430,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-longa-marfino-azul-escuro-gg/03.webp", alt: "Camisa Manga Longa - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-manga-longa-xadrez-blue-steel-c-a-azul-e-preta-g",
@@ -442,7 +446,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-longa-xadrez-blue-steel-c-a-azul-e-preta-g/03.webp", alt: "Camisa Manga Longa Xadrez - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-social-preta-renner-tamanho-2",
@@ -456,7 +460,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-social-preta-renner-tamanho-2/02.webp", alt: "Camisa Social Preta - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-xadrez-hering-azul-e-vermelha-g",
@@ -472,7 +476,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-xadrez-hering-azul-e-vermelha-g/03.webp", alt: "Camisa Xadrez - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "colete-pentel-preto-m",
@@ -487,7 +491,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/colete-pentel-preto-m/02.webp", alt: "Colete - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "jaqueta-budweiser-ambev-vermelho-m",
@@ -503,7 +507,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-budweiser-ambev-vermelho-m/03.webp", alt: "Jaqueta - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "jaqueta-c-a-marrom-m",
@@ -519,7 +523,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-c-a-marrom-m/03.webp", alt: "Jaqueta - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "jaqueta-impermeavel-beats-ambev-azul-e-rosa-g",
@@ -534,7 +538,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-impermeavel-beats-ambev-azul-e-rosa-g/02.webp", alt: "Jaqueta Impermeável - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "jaqueta-impermeavel-decathlon-azul-g",
@@ -550,7 +554,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-impermeavel-decathlon-azul-g/03.webp", alt: "Jaqueta Impermeável - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "jaqueta-moletom-gap-preto-m",
@@ -566,7 +570,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-moletom-gap-preto-m/03.webp", alt: "Jaqueta Moletom - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "jaqueta-primaverasounds-2022-pull-bear-branca-com-detalhes-em-azul-m",
@@ -582,7 +586,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-primaverasounds-2022-pull-bear-branca-com-detalhes-em-azul-m/03.webp", alt: "Jaqueta Primavera Sounds 2022 - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "jaqueta-thrasher-bordo-vinho-m",
@@ -598,7 +602,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-thrasher-bordo-vinho-m/03.webp", alt: "Jaqueta - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "jaqueta-uruguay-sem-marca-azul-escuro-g",
@@ -613,7 +617,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-uruguay-sem-marca-azul-escuro-g/03.webp", alt: "Jaqueta Uruguay - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "moletom-canguru-amsterdam-sem-marca-vermelho-g",
@@ -628,7 +632,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/moletom-canguru-amsterdam-sem-marca-vermelho-g/03.webp", alt: "Moletom Canguru Amsterdam - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "moletom-twitter-pal-frente-known-issue-preto-com-detalhes-em-branco-g",
@@ -644,7 +648,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/moletom-twitter-pal-frente-known-issue-preto-com-detalhes-em-branco-g/03.webp", alt: "Moletom Twitter PAL Frente - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "moletom-twitter-redbird-champion-vermelho-xg",
@@ -660,7 +664,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/moletom-twitter-redbird-champion-vermelho-xg/03.webp", alt: "Moletom Twitter Redbird - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "sueter-budweiser-ambev-vermelho-m",
@@ -676,7 +680,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/sueter-budweiser-ambev-vermelho-m/03.webp", alt: "Suéter - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "blazer-h-m-branco-com-listras-em-preto-size-tbd",
@@ -691,7 +695,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/blazer-h-m-branco-com-listras-em-preto-size-tbd/03.webp", alt: "Blazer - foto 3" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "blusa-colete-h-m-branca-com-detalhes-coloridos-tbd",
@@ -706,7 +710,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/blusa-colete-h-m-branca-com-detalhes-coloridos-tbd/03.webp", alt: "Blusa Colete - foto 3" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-manga-curta-cropped-dzarm-laranja-g",
@@ -721,7 +725,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-curta-cropped-dzarm-laranja-g/02.webp", alt: "Camisa Manga Curta Cropped - foto 2" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "camisa-manga-longa-mango-grafite-m",
@@ -737,7 +741,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-longa-mango-grafite-m/03.webp", alt: "Camisa Manga Longa - foto 3" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "jaqueta-hering-branca-m",
@@ -754,7 +758,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-hering-branca-m/04.webp", alt: "Jaqueta - foto 4" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "vestido-amaro-preto-gg",
@@ -770,7 +774,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/vestido-amaro-preto-gg/03.webp", alt: "Vestido - foto 3" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "vestido-bluesteel-branco-e-vermelho-gg",
@@ -786,7 +790,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/vestido-bluesteel-branco-e-vermelho-gg/03.webp", alt: "Vestido - foto 3" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "vestido-transpassado-hering-branco-e-preto-g",
@@ -802,7 +806,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/vestido-transpassado-hering-branco-e-preto-g/03.webp", alt: "Vestido Transpassado - foto 3" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "mesa-centro",
@@ -814,7 +818,7 @@ export const LISTINGS: Listing[] = [
       "Mesa de centro maciça, 90x50cm. Alguns riscos de uso normal. Retirada combinada.",
     photos: [],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "estante-livros",
@@ -825,7 +829,7 @@ export const LISTINGS: Listing[] = [
     description: "Estante branca, firme, ótima para livros ou plantas. Desmonta para transporte.",
     photos: [],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "bota-democrata-marrom-41",
@@ -843,7 +847,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/bota-democrata-marrom-41/05.webp", alt: "Bota - foto 5" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "sapato-democrata-cafe-41",
@@ -860,7 +864,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/sapato-democrata-cafe-41/04.webp", alt: "Sapato - foto 4" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tenis-adidas-busenitz-vermelho-41",
@@ -876,7 +880,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-adidas-busenitz-vermelho-41/03.webp", alt: "Tenis Busenitz - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tenis-cavalera-bordo-vinho-41",
@@ -894,7 +898,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-cavalera-bordo-vinho-41/05.webp", alt: "Tenis - foto 5" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tenis-nike-blazers-77-vermelho-e-branco-41",
@@ -912,7 +916,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-nike-blazers-77-vermelho-e-branco-41/05.webp", alt: "Tenis Blazers 77 - foto 5" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tenis-nike-sb-chron-2-branco-e-roxo-37",
@@ -930,7 +934,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-nike-sb-chron-2-branco-e-roxo-37/05.webp", alt: "Tenis SB Chron 2 - foto 5" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tenis-nike-sb-chron-2-branco-e-roxo-41",
@@ -947,7 +951,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-nike-sb-chron-2-branco-e-roxo-41/04.webp", alt: "Tenis SB Chron 2 - foto 4" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tenis-vans-oldskool-preto",
@@ -963,7 +967,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-vans-oldskool-preto/03.webp", alt: "Tenis Oldskool - foto 3" },
     ],
     seller: "bella",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tenis-vans-oldskool-van-gogh-vineyard-azul-e-branco-41",
@@ -982,7 +986,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-vans-oldskool-van-gogh-vineyard-azul-e-branco-41/06.webp", alt: "Tenis Oldskool VAN GOGH (Vineyard) - foto 6" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tenis-vans-sk8hi-branco-e-preto-41",
@@ -1000,7 +1004,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-vans-sk8hi-branco-e-preto-41/05.webp", alt: "Tenis Sk8Hi - foto 5" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tenis-vans-sk8hi-yusuke-hanai-vermelho-e-branco-41",
@@ -1017,7 +1021,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-vans-sk8hi-yusuke-hanai-vermelho-e-branco-41/04.webp", alt: "Tenis Sk8Hi Yusuke Hanai - foto 4" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "american-football",
@@ -1035,7 +1039,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/american-football/05.webp", alt: "American Football - foto 5" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "ana-frango-eletrico",
@@ -1056,7 +1060,7 @@ export const LISTINGS: Listing[] = [
       },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "criolo-amaro-e-dino",
@@ -1072,7 +1076,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/criolo/02.webp", alt: "Criolo, Amaro e Dino - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "dona-onete",
@@ -1087,7 +1091,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/dona-onete/02.webp", alt: "Dona Onete - Feitiço Caboclo - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "evangelion-finally",
@@ -1102,7 +1106,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/evangelion/02.webp", alt: "Evangelion Finally - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "gabriela-leite",
@@ -1117,7 +1121,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/gabriela-leit/02.webp", alt: "Gabriele Leite - Gunûncho - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "house-of-sugar-alex-g",
@@ -1136,7 +1140,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/house-of-sugar-alex-g/06.webp", alt: "Alex G - House of Sugar - foto 6" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "kero-kero-bonito",
@@ -1155,7 +1159,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/kero-kero-bonito/06.webp", alt: "Kero Kero Bonito - foto 6" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "milton-nascimento-travessia",
@@ -1171,7 +1175,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/milton-nascimento/02.webp", alt: "Milton Nascimento - Travessia - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "aro-de-pilates-liveup-esportes-laranja-r-20",
@@ -1186,7 +1190,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/aro-de-pilates-liveup-esportes-laranja-r-20/02.webp", alt: "Aro de Pilates - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "espelho-rei-dos-vidros-44cmx64cm-rs40",
@@ -1203,7 +1207,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/espelho-rei-dos-vidros-44cmx64cm-rs40/04.webp", alt: "Espelho - foto 4" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "porta-retrato-westwing-caramelo-r-10",
@@ -1217,7 +1221,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/porta-retrato-westwing-caramelo-r-10/01.webp", alt: "Porta-Retrato - foto 1" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "quadro-moca-com-brinco-de-perola-ikea-r-20",
@@ -1231,7 +1235,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/quadro-moca-com-brinco-de-perola-ikea-r-20/02.webp", alt: "Quadro Moça com Brinco de Pérola - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "tapete-de-yoga-sem-marca-lilas-r-30",
@@ -1247,7 +1251,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/tapete-de-yoga-sem-marca-lilas-r-30/04.webp", alt: "Tapete de Yoga - foto 4" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "cacarola-ferro-fundido-fissler-preta-r-250",
@@ -1265,7 +1269,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/cacarola-ferro-fundido-fissler-preta-r-250/05.webp", alt: "Caçarola de Ferro Fundido - foto 5" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "moedor-de-cafe-grundig-cm3260-preto-r-100",
@@ -1281,7 +1285,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/moedor-de-cafe-grundig-cm3260-preto-r-100/03.webp", alt: "Moedor de Café CM3260 - foto 3" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "prensa-francesa-ikea-preto-r-25",
@@ -1296,7 +1300,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/prensa-francesa-ikea-preto-r-25/02.webp", alt: "Prensa Francesa - foto 2" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
   {
     id: "livro-a-gente-mira-no-amor-e-acerta-na-solidao-ana-suy-r-20",
@@ -1309,8 +1313,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-a-gente-mira-no-amor-e-acerta-na-solidao-ana-suy-r-20/01.webp", alt: "A Gente Mira no Amor e Acerta na Solidão - foto 1" },
       { src: "/images/livros/livro-a-gente-mira-no-amor-e-acerta-na-solidao-ana-suy-r-20/02.webp", alt: "A Gente Mira no Amor e Acerta na Solidão - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-as-pessoas-na-plataforma-5-clare-pooley-r-35",
@@ -1323,8 +1327,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-as-pessoas-na-plataforma-5-clare-pooley-r-35/01.webp", alt: "As Pessoas na Plataforma 5 - foto 1" },
       { src: "/images/livros/livro-as-pessoas-na-plataforma-5-clare-pooley-r-35/02.webp", alt: "As Pessoas na Plataforma 5 - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-casa-de-folhas-mark-z-danielezwski-r-140",
@@ -1336,8 +1340,8 @@ export const LISTINGS: Listing[] = [
     photos: [
       { src: "/images/livros/livro-casa-de-folhas-mark-z-danielezwski-r-140/01.webp", alt: "Casa de Folhas - foto 1" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-destrua-esse-diario-keri-smith-r-15",
@@ -1349,8 +1353,8 @@ export const LISTINGS: Listing[] = [
     photos: [
       { src: "/images/livros/livro-destrua-esse-diario-keri-smith-r-15/01.webp", alt: "Destrua Esse Diário - foto 1" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-em-outra-vida-talvez-taylor-jenkins-reid-r-40",
@@ -1363,8 +1367,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-em-outra-vida-talvez-taylor-jenkins-reid-r-40/01.webp", alt: "Em Outra Vida, Talvez? - foto 1" },
       { src: "/images/livros/livro-em-outra-vida-talvez-taylor-jenkins-reid-r-40/02.webp", alt: "Em Outra Vida, Talvez? - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-murdle-volume-1-gt-karber-r-40",
@@ -1377,8 +1381,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-murdle-volume-1-gt-karber-r-40/01.webp", alt: "Murdle Volume 1 - foto 1" },
       { src: "/images/livros/livro-murdle-volume-1-gt-karber-r-40/02.webp", alt: "Murdle Volume 1 - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-o-livro-de-receitas-do-studio-ghibli-jessica-yun-r-100",
@@ -1392,8 +1396,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-o-livro-de-receitas-do-studio-ghibli-jessica-yun-r-100/02.webp", alt: "O Livro de Receitas do Studio Ghibli - foto 2" },
       { src: "/images/livros/livro-o-livro-de-receitas-do-studio-ghibli-jessica-yun-r-100/03.webp", alt: "O Livro de Receitas do Studio Ghibli - foto 3" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-o-misterio-dos-principes-na-torre-josephine-tey-r-40",
@@ -1406,8 +1410,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-o-misterio-dos-principes-na-torre-josephine-tey-r-40/01.webp", alt: "O Mistério dos Príncipes na Torre - foto 1" },
       { src: "/images/livros/livro-o-misterio-dos-principes-na-torre-josephine-tey-r-40/02.webp", alt: "O Mistério dos Príncipes na Torre - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-o-que-resta-de-nos-virginie-grimaldi-r-30",
@@ -1420,8 +1424,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-o-que-resta-de-nos-virginie-grimaldi-r-30/01.webp", alt: "O Que Resta de Nós - foto 1" },
       { src: "/images/livros/livro-o-que-resta-de-nos-virginie-grimaldi-r-30/02.webp", alt: "O Que Resta de Nós - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-o-que-tem-na-geladeira-rita-lobo-r-100",
@@ -1434,8 +1438,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-o-que-tem-na-geladeira-rita-lobo-r-100/01.webp", alt: "O Que Tem na Geladeira? - foto 1" },
       { src: "/images/livros/livro-o-que-tem-na-geladeira-rita-lobo-r-100/02.webp", alt: "O Que Tem na Geladeira? - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-os-fantasmas-de-sheridan-le-fanu-sheridan-le-fanu-r-30",
@@ -1448,8 +1452,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-os-fantasmas-de-sheridan-le-fanu-sheridan-le-fanu-r-30/01.webp", alt: "Os Fantasmas de Sheridan Le Fanu - foto 1" },
       { src: "/images/livros/livro-os-fantasmas-de-sheridan-le-fanu-sheridan-le-fanu-r-30/02.webp", alt: "Os Fantasmas de Sheridan Le Fanu - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-selecao-brasileira-de-gastronomia-alexandre-forbes-r-40",
@@ -1462,8 +1466,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-selecao-brasileira-de-gastronomia-alexandre-forbes-r-40/01.webp", alt: "Seleção Brasileira de Gastronomia - foto 1" },
       { src: "/images/livros/livro-selecao-brasileira-de-gastronomia-alexandre-forbes-r-40/02.webp", alt: "Seleção Brasileira de Gastronomia - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-so-para-um-rita-lobo-r-50",
@@ -1476,8 +1480,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-so-para-um-rita-lobo-r-50/01.webp", alt: "Só Para Um - foto 1" },
       { src: "/images/livros/livro-so-para-um-rita-lobo-r-50/02.webp", alt: "Só Para Um - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-til-eca-de-queiroz-rs20",
@@ -1490,8 +1494,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-til-eca-de-queiroz-rs20/01.webp", alt: "Til - foto 1" },
       { src: "/images/livros/livro-til-eca-de-queiroz-rs20/02.webp", alt: "Til - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-trilogia-o-problema-dos-tres-corpos-cixin-liu-r-150",
@@ -1504,8 +1508,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-trilogia-o-problema-dos-tres-corpos-cixin-liu-r-150/01.webp", alt: "Trilogia O Problema dos Três Corpos - foto 1" },
       { src: "/images/livros/livro-trilogia-o-problema-dos-tres-corpos-cixin-liu-r-150/02.webp", alt: "Trilogia O Problema dos Três Corpos - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-tudo-e-rio-carla-madeira-r-35",
@@ -1518,8 +1522,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-tudo-e-rio-carla-madeira-r-35/01.webp", alt: "Tudo é Rio - foto 1" },
       { src: "/images/livros/livro-tudo-e-rio-carla-madeira-r-35/02.webp", alt: "Tudo é Rio - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-uma-familia-feliz-raphael-montes-r-35",
@@ -1532,8 +1536,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-uma-familia-feliz-raphael-montes-r-35/01.webp", alt: "Uma Família Feliz - foto 1" },
       { src: "/images/livros/livro-uma-familia-feliz-raphael-montes-r-35/02.webp", alt: "Uma Família Feliz - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "livro-vespera-carla-madeira-r-35",
@@ -1546,8 +1550,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-vespera-carla-madeira-r-35/01.webp", alt: "Véspera - foto 1" },
       { src: "/images/livros/livro-vespera-carla-madeira-r-35/02.webp", alt: "Véspera - foto 2" },
     ],
-    seller: "mateus",
-    sold: false,
+    seller: "bella",
+    status: "disponivel",
   },
   {
     id: "vitrola-sony-ps-lx310bt-preta-r-1500",
@@ -1565,7 +1569,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/vitrola-sony-ps-lx310bt-preta-r-1500/04.webp", alt: "Vitrola PS-LX310BT - foto 4" },
     ],
     seller: "mateus",
-    sold: false,
+    status: "disponivel",
   },
 ];
 

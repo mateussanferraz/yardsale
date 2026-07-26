@@ -12,7 +12,7 @@ export function ListingCard({ listing }: { listing: Listing }) {
         photos={listing.photos}
         title={listing.title}
         category={listing.category}
-        sold={listing.sold}
+        status={listing.status}
       />
 
       <div className="flex flex-1 flex-col gap-3 p-5">
@@ -79,8 +79,10 @@ export function ListingCard({ listing }: { listing: Listing }) {
             Com <span className="text-foreground">{seller.name}</span>
           </span>
 
-          {listing.sold ? (
-            <span className="text-xs text-muted-foreground italic">Indisponível</span>
+          {listing.status !== "disponivel" ? (
+            <span className="text-xs text-muted-foreground italic">
+              {listing.status === "reservado" ? "Reservado" : "Indisponível"}
+            </span>
           ) : (
             <a
               href={buildWhatsAppLink(listing.seller, listing.title)}

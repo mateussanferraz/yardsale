@@ -4,7 +4,7 @@ import { CategoryIcon } from "./CategoryIcon";
 
 export function CategoryCard({ category }: { category: Category }) {
   const listings = getListingsByCategory(category.slug);
-  const available = listings.filter((l) => !l.sold).length;
+  const available = listings.filter((l) => l.status === "disponivel").length;
 
   return (
     <Link

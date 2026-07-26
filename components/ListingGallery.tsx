@@ -3,19 +3,19 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { CategoryIcon } from "./CategoryIcon";
-import { CategorySlug, Photo } from "@/lib/listings";
+import { CategorySlug, ListingStatus, Photo } from "@/lib/listings";
 import { withBasePath } from "@/lib/basePath";
 
 export function ListingGallery({
   photos,
   title,
   category,
-  sold,
+  status,
 }: {
   photos: Photo[];
   title: string;
   category: CategorySlug;
-  sold: boolean;
+  status: ListingStatus;
 }) {
   const [index, setIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -123,10 +123,10 @@ export function ListingGallery({
           </>
         )}
 
-        {sold && (
+        {status !== "disponivel" && (
           <div className="absolute inset-0 flex items-center justify-center bg-background/70 backdrop-blur-[1px]">
             <span className="rotate-[-8deg] rounded-md border-2 border-foreground/80 px-4 py-1 text-sm font-semibold tracking-widest text-foreground/80 uppercase">
-              Vendido
+              {status === "reservado" ? "Reservado" : "Vendido"}
             </span>
           </div>
         )}
