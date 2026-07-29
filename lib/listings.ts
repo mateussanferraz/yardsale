@@ -633,7 +633,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-thrasher-bordo-vinho-m/03.webp", alt: "Jaqueta - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "jaqueta-uruguay-sem-marca-azul-escuro-g",
@@ -1258,7 +1258,7 @@ export const LISTINGS: Listing[] = [
       },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "criolo-amaro-e-dino",
