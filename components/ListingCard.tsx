@@ -1,4 +1,4 @@
-import { Listing, SELLERS } from "@/lib/listings";
+import { Listing, SELLERS, SEPTEMBER_DELIVERY_TAG } from "@/lib/listings";
 import { formatPrice } from "@/lib/format";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { ListingGallery } from "./ListingGallery";
@@ -65,14 +65,23 @@ export function ListingCard({ listing }: { listing: Listing }) {
               {language}
             </span>
           ))}
-          {listing.tags?.map((tag) => (
-            <span
-              key={tag}
-              className="w-fit rounded-full bg-accent/10 px-2.5 py-1 text-xs font-medium text-accent"
-            >
-              {tag}
-            </span>
-          ))}
+          {listing.tags?.map((tag) =>
+            tag === SEPTEMBER_DELIVERY_TAG ? (
+              <span
+                key={tag}
+                className="w-fit rounded-full bg-amber-500 px-2.5 py-1 text-xs font-semibold text-white"
+              >
+                {tag}
+              </span>
+            ) : (
+              <span
+                key={tag}
+                className="w-fit rounded-full bg-accent/10 px-2.5 py-1 text-xs font-medium text-accent"
+              >
+                {tag}
+              </span>
+            ),
+          )}
         </div>
 
         <p className="text-sm leading-relaxed text-muted-foreground">{listing.description}</p>

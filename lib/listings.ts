@@ -123,6 +123,8 @@ export interface Photo {
 
 export type ListingStatus = "disponivel" | "reservado" | "vendido";
 
+export const SEPTEMBER_DELIVERY_TAG = "Entrega apenas em setembro";
+
 export interface Listing {
   id: string;
   title: string;
@@ -872,6 +874,7 @@ export const LISTINGS: Listing[] = [
     brand: "Flexform",
     color: "Preta",
     condition: "Bem conservado",
+    tags: [SEPTEMBER_DELIVERY_TAG],
     description: "Cadeira de escritório Uni, da Flexform, preta, com braços ajustáveis e rodízios.",
     photos: [
       { src: "/images/moveis/cadeira-uni-flexform-preta-r-450/01.webp", alt: "Cadeira Uni - foto 1" },
@@ -1786,7 +1789,7 @@ export const LISTINGS: Listing[] = [
     brand: "Dell",
     color: "Preto",
     condition: "Bem conservado",
-    tags: ["Com caixa"],
+    tags: ["Com caixa", SEPTEMBER_DELIVERY_TAG],
     description: "Monitor Dell P2719H, preto, 1920x1080px, acompanha caixa original.",
     photos: [
       { src: "/images/eletronicos/monitor-dell-p2719h-preto-r-900/01.webp", alt: "Monitor Dell P2719H - foto 1" },
@@ -1805,6 +1808,7 @@ export const LISTINGS: Listing[] = [
     brand: "Acer",
     color: "Preto",
     condition: "Bem conservado",
+    tags: [SEPTEMBER_DELIVERY_TAG],
     description: "Monitor Acer VG240Y, preto.",
     photos: [
       { src: "/images/eletronicos/monitor-acer-vg240y-preto-r-400/01.webp", alt: "Monitor Acer VG240Y - foto 1" },
@@ -1993,6 +1997,7 @@ export const LISTINGS: Listing[] = [
     price: 1700,
     brand: "Edifier",
     color: "Preto",
+    tags: [SEPTEMBER_DELIVERY_TAG],
     description: "Caixas de som Edifier R2750DB, pretas.",
     photos: [
       { src: "/images/eletronicos/caixas-de-som-edifier-r2750db-preto/01.webp", alt: "Caixas de Som R2750DB - foto 1" },
