@@ -84,7 +84,7 @@ export function ListingCard({ listing }: { listing: Listing }) {
 
           {listing.status !== "disponivel" ? (
             <span className="text-xs text-muted-foreground italic">
-              {listing.status === "reservado" ? "Reservado" : "Indisponível"}
+              {listing.status === "reservado" ? "Reservado" : "Vendido"}
             </span>
           ) : (
             <a
