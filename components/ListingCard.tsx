@@ -7,7 +7,10 @@ export function ListingCard({ listing }: { listing: Listing }) {
   const seller = SELLERS[listing.seller];
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-shadow hover:shadow-lg hover:shadow-black/5">
+    <article
+      id={listing.id}
+      className="group flex scroll-mt-24 flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-shadow hover:shadow-lg hover:shadow-black/5"
+    >
       <ListingGallery
         photos={listing.photos}
         title={listing.title}
@@ -85,7 +88,7 @@ export function ListingCard({ listing }: { listing: Listing }) {
             </span>
           ) : (
             <a
-              href={buildWhatsAppLink(listing.seller, listing.title)}
+              href={buildWhatsAppLink(listing)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-xs font-medium text-accent-foreground transition-colors hover:bg-accent-hover"
