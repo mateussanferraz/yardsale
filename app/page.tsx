@@ -26,15 +26,15 @@ export default function Home() {
       <main className="flex-1">
         <section className="mx-auto max-w-5xl px-6 pt-16 pb-12 sm:pt-24 sm:pb-16">
           <p className="text-sm font-medium tracking-wide text-accent uppercase">
-            Mudança para a Espanha
+            Mudança para Barcelona!
           </p>
           <h1 className="mt-3 max-w-2xl font-display text-4xl leading-tight text-foreground sm:text-5xl">
             Mateus e Bella vendem tudo
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Estamos arrumando as malas e vendendo o que não vai com a gente: jogos de tabuleiro,
-            roupas, móveis, sapatos e discos. Retirada combinada perto da Estação Santa Cruz
-            (Metrô) ou em pontos próximos — envio a combinar.
+            Estamos de malas prontas para Barcelona e liquidando tudo que não vai com a gente:
+            jogos de tabuleiro, roupas, móveis, sapatos e discos! Retirada combinada perto da
+            Estação Santa Cruz (Metrô) ou em pontos próximos — envio a combinar.
           </p>
         </section>
 
