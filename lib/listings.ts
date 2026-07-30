@@ -1387,7 +1387,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/aro-de-pilates-liveup-esportes-laranja-r-20/01.webp", alt: "Aro de Pilates - foto 1" },
       { src: "/images/objetos-gerais/aro-de-pilates-liveup-esportes-laranja-r-20/02.webp", alt: "Aro de Pilates - foto 2" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1404,7 +1404,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/espelho-rei-dos-vidros-44cmx64cm-rs40/03.webp", alt: "Espelho - foto 3" },
       { src: "/images/objetos-gerais/espelho-rei-dos-vidros-44cmx64cm-rs40/04.webp", alt: "Espelho - foto 4" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "reservado",
   },
   {
@@ -1418,7 +1418,7 @@ export const LISTINGS: Listing[] = [
     photos: [
       { src: "/images/objetos-gerais/porta-retrato-westwing-caramelo-r-10/01.webp", alt: "Porta-Retrato - foto 1" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1432,7 +1432,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/quadro-moca-com-brinco-de-perola-ikea-r-20/01.webp", alt: "Quadro Moça com Brinco de Pérola - foto 1" },
       { src: "/images/objetos-gerais/quadro-moca-com-brinco-de-perola-ikea-r-20/02.webp", alt: "Quadro Moça com Brinco de Pérola - foto 2" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1448,7 +1448,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/tapete-de-yoga-sem-marca-lilas-r-30/03.webp", alt: "Tapete de Yoga - foto 3" },
       { src: "/images/objetos-gerais/tapete-de-yoga-sem-marca-lilas-r-30/04.webp", alt: "Tapete de Yoga - foto 4" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1463,7 +1463,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/toalha-microfibra-decathlon-azul-r-20/01.webp", alt: "Toalha de Microfibra - foto 1" },
       { src: "/images/objetos-gerais/toalha-microfibra-decathlon-azul-r-20/02.webp", alt: "Toalha de Microfibra - foto 2" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1478,7 +1478,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/toalha-microfibra-decathlon-roxa-r-20/01.webp", alt: "Toalha de Microfibra - foto 1" },
       { src: "/images/objetos-gerais/toalha-microfibra-decathlon-roxa-r-20/02.webp", alt: "Toalha de Microfibra - foto 2" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
