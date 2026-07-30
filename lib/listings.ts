@@ -1528,7 +1528,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/prensa-francesa-ikea-preto-r-25/02.webp", alt: "Prensa Francesa - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "livro-a-gente-mira-no-amor-e-acerta-na-solidao-ana-suy-r-20",
