@@ -280,7 +280,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/harmonies/09.webp", alt: "Harmonies - foto 9" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "spirit-island",
@@ -1405,7 +1405,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/espelho-rei-dos-vidros-44cmx64cm-rs40/04.webp", alt: "Espelho - foto 4" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "porta-retrato-westwing-caramelo-r-10",
