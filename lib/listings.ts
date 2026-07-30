@@ -863,7 +863,7 @@ export const LISTINGS: Listing[] = [
     description:
       "Mesa de centro maciça, 90x50cm. Alguns riscos de uso normal. Retirada combinada.",
     photos: [],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -880,7 +880,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/moveis/cadeira-uni-flexform-preta-r-450/01.webp", alt: "Cadeira Uni - foto 1" },
       { src: "/images/moveis/cadeira-uni-flexform-preta-r-450/02.webp", alt: "Cadeira Uni - foto 2" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1496,7 +1496,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/cacarola-ferro-fundido-fissler-preta-r-250/04.webp", alt: "Caçarola de Ferro Fundido - foto 4" },
       { src: "/images/cozinha/cacarola-ferro-fundido-fissler-preta-r-250/05.webp", alt: "Caçarola de Ferro Fundido - foto 5" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1512,8 +1512,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/moedor-de-cafe-grundig-cm3260-preto-r-100/02.webp", alt: "Moedor de Café CM3260 - foto 2" },
       { src: "/images/cozinha/moedor-de-cafe-grundig-cm3260-preto-r-100/03.webp", alt: "Moedor de Café CM3260 - foto 3" },
     ],
-    seller: "mateus",
-    status: "disponivel",
+    seller: "bella",
+    status: "reservado",
   },
   {
     id: "prensa-francesa-ikea-preto-r-25",
@@ -1527,7 +1527,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/prensa-francesa-ikea-preto-r-25/01.webp", alt: "Prensa Francesa - foto 1" },
       { src: "/images/cozinha/prensa-francesa-ikea-preto-r-25/02.webp", alt: "Prensa Francesa - foto 2" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1625,7 +1625,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-o-livro-de-receitas-do-studio-ghibli-jessica-yun-r-100/03.webp", alt: "O Livro de Receitas do Studio Ghibli - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "livro-o-misterio-dos-principes-na-torre-josephine-tey-r-40",
@@ -1797,7 +1797,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/monitor-dell-p2719h-preto-r-900/03.webp", alt: "Monitor Dell P2719H - foto 3" },
       { src: "/images/eletronicos/monitor-dell-p2719h-preto-r-900/04.webp", alt: "Monitor Dell P2719H - foto 4" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1815,7 +1815,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/monitor-acer-vg240y-preto-r-400/02.webp", alt: "Monitor Acer VG240Y - foto 2" },
       { src: "/images/eletronicos/monitor-acer-vg240y-preto-r-400/03.webp", alt: "Monitor Acer VG240Y - foto 3" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -1833,7 +1833,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/vitrola-sony-ps-lx310bt-preta-r-1500/03.webp", alt: "Vitrola PS-LX310BT - foto 3" },
       { src: "/images/eletronicos/vitrola-sony-ps-lx310bt-preta-r-1500/04.webp", alt: "Vitrola PS-LX310BT - foto 4" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -2004,7 +2004,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/caixas-de-som-edifier-r2750db-preto/02.webp", alt: "Caixas de Som R2750DB - foto 2" },
       { src: "/images/eletronicos/caixas-de-som-edifier-r2750db-preto/03.webp", alt: "Caixas de Som R2750DB - foto 3" },
     ],
-    seller: "mateus",
+    seller: "bella",
     status: "disponivel",
   },
   {
@@ -2019,8 +2019,8 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/passadeira-a-vapor-cadence-lisser-110v/01.webp", alt: "Passadeira a Vapor Lisser - foto 1" },
       { src: "/images/eletronicos/passadeira-a-vapor-cadence-lisser-110v/02.webp", alt: "Passadeira a Vapor Lisser - foto 2" },
     ],
-    seller: "mateus",
-    status: "disponivel",
+    seller: "bella",
+    status: "reservado",
   },
 ];
 
