@@ -1542,7 +1542,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-a-gente-mira-no-amor-e-acerta-na-solidao-ana-suy-r-20/02.webp", alt: "A Gente Mira no Amor e Acerta na Solidão - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "livro-as-pessoas-na-plataforma-5-clare-pooley-r-35",
@@ -1667,7 +1667,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-o-que-tem-na-geladeira-rita-lobo-r-100/02.webp", alt: "O Que Tem na Geladeira? - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "livro-os-fantasmas-de-sheridan-le-fanu-sheridan-le-fanu-r-30",
@@ -1709,7 +1709,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-so-para-um-rita-lobo-r-50/02.webp", alt: "Só Para Um - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "livro-til-eca-de-queiroz-rs20",
