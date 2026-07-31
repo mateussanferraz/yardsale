@@ -1182,7 +1182,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-adidas-sleek-branco-e-verde-menta-37-r-200/04.webp", alt: "Tênis Sleek - foto 4" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "tenis-nike-airmax-sc-branco-e-cinza-com-detalhes-em-azul-37-r-250",
@@ -1201,7 +1201,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/tenis-nike-airmax-sc-branco-e-cinza-com-detalhes-em-azul-37-r-250/05.webp", alt: "Tênis AirMax SC - foto 5" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "tenis-vans-authentic-lowpro-rosa-com-solado-roxo-37-r-150",
