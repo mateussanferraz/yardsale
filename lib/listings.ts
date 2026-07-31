@@ -1388,7 +1388,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/aro-de-pilates-liveup-esportes-laranja-r-20/02.webp", alt: "Aro de Pilates - foto 2" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "espelho-rei-dos-vidros-44cmx64cm-rs40",
