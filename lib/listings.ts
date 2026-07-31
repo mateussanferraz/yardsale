@@ -165,7 +165,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/sky-team/06.webp", alt: "Sky Team - foto 6" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "cores-com-dicas",
