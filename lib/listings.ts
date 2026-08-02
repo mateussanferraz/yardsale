@@ -358,7 +358,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/cards-against-humanity/02.webp", alt: "Cards Against Humanity - foto 2" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "galaxy-trucker",
@@ -409,7 +409,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/coup/03.webp", alt: "Coup - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "modern-art",
@@ -1060,7 +1060,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/sapato-social-democrata-preto-41-r-120/03.webp", alt: "Sapato Social - foto 3" },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "sapato-democrata-cafe-41",
