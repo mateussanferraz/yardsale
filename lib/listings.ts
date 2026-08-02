@@ -1625,7 +1625,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/cacarola-ferro-fundido-fissler-preta-r-250/05.webp", alt: "Caçarola de Ferro Fundido - foto 5" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "moedor-de-cafe-grundig-cm3260-preto-r-100",
@@ -1865,7 +1865,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-trilogia-o-problema-dos-tres-corpos-cixin-liu-r-150/02.webp", alt: "Trilogia O Problema dos Três Corpos - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "livro-tudo-e-rio-carla-madeira-r-35",
