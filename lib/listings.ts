@@ -165,7 +165,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/sky-team/06.webp", alt: "Sky Team - foto 6" },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "cores-com-dicas",
@@ -425,8 +425,6 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/modern-art/02.webp", alt: "Modern Art - foto 2" },
       { src: "/images/jogos-de-tabuleiro/modern-art/03.webp", alt: "Modern Art - foto 3" },
       { src: "/images/jogos-de-tabuleiro/modern-art/04.webp", alt: "Modern Art - foto 4" },
-      { src: "/images/jogos-de-tabuleiro/modern-art/05.webp", alt: "Modern Art - foto 5" },
-      { src: "/images/jogos-de-tabuleiro/modern-art/06.webp", alt: "Modern Art - foto 6" },
     ],
     seller: "mateus",
     status: "disponivel",
@@ -1062,7 +1060,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/sapato-social-democrata-preto-41-r-120/03.webp", alt: "Sapato Social - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "sapato-democrata-cafe-41",
@@ -1672,7 +1670,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-a-gente-mira-no-amor-e-acerta-na-solidao-ana-suy-r-20/02.webp", alt: "A Gente Mira no Amor e Acerta na Solidão - foto 2" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "livro-as-pessoas-na-plataforma-5-clare-pooley-r-35",
@@ -1797,7 +1795,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-o-que-tem-na-geladeira-rita-lobo-r-100/02.webp", alt: "O Que Tem na Geladeira? - foto 2" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "livro-os-fantasmas-de-sheridan-le-fanu-sheridan-le-fanu-r-30",
@@ -1839,7 +1837,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-so-para-um-rita-lobo-r-50/02.webp", alt: "Só Para Um - foto 2" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "livro-til-eca-de-queiroz-rs20",
