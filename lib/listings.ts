@@ -1865,7 +1865,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-trilogia-o-problema-dos-tres-corpos-cixin-liu-r-150/02.webp", alt: "Trilogia O Problema dos Três Corpos - foto 2" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "livro-tudo-e-rio-carla-madeira-r-35",
@@ -1907,7 +1907,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-vespera-carla-madeira-r-35/02.webp", alt: "Véspera - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "monitor-dell-p2719h-preto-r-900",
@@ -2148,7 +2148,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/passadeira-a-vapor-cadence-lisser-110v/02.webp", alt: "Passadeira a Vapor Lisser - foto 2" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
 ];
 
