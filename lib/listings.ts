@@ -1012,17 +1012,6 @@ export const LISTINGS: Listing[] = [
     status: "disponivel",
   },
   {
-    id: "estante-livros",
-    title: "Estante de livros 5 prateleiras",
-    category: "moveis",
-    price: 180,
-    condition: "Bem conservado",
-    description: "Estante branca, firme, ótima para livros ou plantas. Desmonta para transporte.",
-    photos: [],
-    seller: "bella",
-    status: "disponivel",
-  },
-  {
     id: "prateleiras-vinis-quadros-brancas",
     title: "2 Prateleiras para Vinis/Quadros",
     category: "moveis",
