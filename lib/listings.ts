@@ -1023,6 +1023,73 @@ export const LISTINGS: Listing[] = [
     status: "disponivel",
   },
   {
+    id: "prateleiras-vinis-quadros-brancas",
+    title: "2 Prateleiras para Vinis/Quadros",
+    category: "moveis",
+    price: 60,
+    color: "Branca",
+    condition: "Bem conservado",
+    description:
+      "Par de prateleiras brancas para exibir vinis ou quadros, 10cm de profundidade. Vendidas em conjunto.",
+    photos: [
+      { src: "/images/moveis/prateleiras-vinis-quadros-brancas/01.webp", alt: "2 Prateleiras para Vinis/Quadros - foto 1" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "estante-jogos-serena-nogueira-caiena",
+    title: "Estante para Jogos de Tabuleiro",
+    category: "moveis",
+    price: 650,
+    brand: "Serena Estantes",
+    color: "Nogueira Caiena",
+    condition: "Bem conservado",
+    description:
+      "Estante com 6 nichos, feita sob medida pela Serena Estantes, 76x120x35cm (altura x largura x profundidade). MDF 18mm, não precisa de montagem.",
+    photos: [
+      { src: "/images/moveis/estante-jogos-serena-nogueira-caiena/01.webp", alt: "Estante para Jogos de Tabuleiro - foto 1" },
+      { src: "/images/moveis/estante-jogos-serena-nogueira-caiena/02.webp", alt: "Estante para Jogos de Tabuleiro - foto 2" },
+      { src: "/images/moveis/estante-jogos-serena-nogueira-caiena/03.webp", alt: "Estante para Jogos de Tabuleiro - foto 3" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "estante-vinil-serena-cumaru",
+    title: "Estante para Discos de Vinil",
+    category: "moveis",
+    price: 650,
+    brand: "Serena Estantes",
+    color: "Cumaru",
+    condition: "Bem conservado",
+    description:
+      "Estante com 6 nichos, feita sob medida pela Serena Estantes, capacidade para 516 vinis, 76x120x35cm (altura x largura x profundidade). MDF 18mm, não precisa de montagem.",
+    photos: [
+      { src: "/images/moveis/estante-vinil-serena-cumaru/01.webp", alt: "Estante para Discos de Vinil - foto 1" },
+      { src: "/images/moveis/estante-vinil-serena-cumaru/02.webp", alt: "Estante para Discos de Vinil - foto 2" },
+      { src: "/images/moveis/estante-vinil-serena-cumaru/03.webp", alt: "Estante para Discos de Vinil - foto 3" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "rack-terracota-pes-madeira-macica",
+    title: "Rack para TV",
+    category: "moveis",
+    price: 300,
+    color: "Terracota",
+    condition: "Bem conservado",
+    description:
+      "Rack para TV com pés em madeira maciça, 1.80x50x40cm (largura x altura x profundidade).",
+    photos: [
+      { src: "/images/moveis/rack-terracota-pes-madeira-macica/01.webp", alt: "Rack para TV - foto 1" },
+      { src: "/images/moveis/rack-terracota-pes-madeira-macica/02.webp", alt: "Rack para TV - foto 2" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
     id: "bota-democrata-marrom-41",
     title: "Bota",
     category: "sapatos",
