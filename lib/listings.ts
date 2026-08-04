@@ -142,8 +142,14 @@ export interface Listing {
   photos: Photo[];
   seller: SellerId;
   status: ListingStatus;
+  /** ISO date (YYYY-MM-DD) the item was added. Optional — only set for recently added items, used to show the "Novo" tag. */
+  dateAdded?: string;
   /** Internal control only — never rendered on the site. Who reserved/bought the item. */
   buyerName?: string;
+}
+
+export function getCategoryDatesAdded(slug: CategorySlug): string[] {
+  return LISTINGS.filter((l) => l.category === slug && l.dateAdded).map((l) => l.dateAdded!);
 }
 
 export const LISTINGS: Listing[] = [
@@ -303,6 +309,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "arcs",
+    dateAdded: "2026-07-31",
     title: "Arcs + Expansão: O Flagelo do Vértice",
     category: "jogos-de-tabuleiro",
     price: 1000,
@@ -329,6 +336,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "ascension",
+    dateAdded: "2026-07-31",
     title: "Ascension + Expansão: O Retorno do Caído",
     category: "jogos-de-tabuleiro",
     price: 260,
@@ -346,6 +354,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "cards-against-humanity",
+    dateAdded: "2026-07-31",
     title: "Cards Against Humanity",
     category: "jogos-de-tabuleiro",
     price: 120,
@@ -362,6 +371,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "galaxy-trucker",
+    dateAdded: "2026-07-31",
     title: "Galaxy Trucker",
     category: "jogos-de-tabuleiro",
     price: 150,
@@ -379,6 +389,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "sintonia",
+    dateAdded: "2026-07-31",
     title: "Sintonia (Wavelength)",
     category: "jogos-de-tabuleiro",
     price: 180,
@@ -396,6 +407,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "coup",
+    dateAdded: "2026-07-31",
     title: "Coup + Expansão: A Reforma",
     category: "jogos-de-tabuleiro",
     price: 60,
@@ -413,6 +425,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "modern-art",
+    dateAdded: "2026-07-31",
     title: "Modern Art",
     category: "jogos-de-tabuleiro",
     price: 240,
@@ -1013,6 +1026,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "prateleiras-vinis-quadros-brancas",
+    dateAdded: "2026-08-03",
     title: "2 Prateleiras para Vinis/Quadros",
     category: "moveis",
     price: 60,
@@ -1028,6 +1042,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "estante-jogos-serena-nogueira-caiena",
+    dateAdded: "2026-08-03",
     title: "Estante para Jogos de Tabuleiro",
     category: "moveis",
     price: 650,
@@ -1047,6 +1062,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "estante-vinil-serena-cumaru",
+    dateAdded: "2026-08-03",
     title: "Estante para Discos de Vinil",
     category: "moveis",
     price: 650,
@@ -1066,6 +1082,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "rack-terracota-pes-madeira-macica",
+    dateAdded: "2026-08-03",
     title: "Rack para TV",
     category: "moveis",
     price: 300,
@@ -1084,6 +1101,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "cabideiro-banco-sapateira-sams-club",
+    dateAdded: "2026-08-04",
     title: "Cabideiro com Banco e Sapateira",
     category: "moveis",
     price: 150,
@@ -1689,6 +1707,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "colchao-inflavel-casal-mor-life-r-100",
+    dateAdded: "2026-08-03",
     title: "Colchão Inflável de Casal",
     category: "objetos-gerais",
     price: 100,
@@ -1704,6 +1723,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "luminaria-mapu-branca-r-100",
+    dateAdded: "2026-08-03",
     title: "Luminária Mapu",
     category: "objetos-gerais",
     price: 100,
@@ -1721,6 +1741,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "tapete-lavavel-180x100cm",
+    dateAdded: "2026-08-03",
     title: "Tapete Lavável",
     category: "objetos-gerais",
     condition: "Bem conservado",
@@ -2276,6 +2297,7 @@ export const LISTINGS: Listing[] = [
   },
   {
     id: "inalador-panvel-branco-r-70",
+    dateAdded: "2026-08-04",
     title: "Inalador/Nebulizador Panvel",
     category: "eletronicos",
     price: 70,

@@ -34,6 +34,7 @@ Cada item segue este formato:
   ],
   seller: "mateus" | "bella",
   status: "disponivel" | "reservado" | "vendido",
+  dateAdded: "2026-08-04", // opcional, formato ISO (AAAA-MM-DD) — mostra o selo "Novo" na categoria por 3 dias
   buyerName: "Nome de quem reservou/comprou", // opcional, só controle interno — nunca aparece no site
 }
 ```
@@ -43,6 +44,10 @@ o card fica esmaecido com um selo correspondente e o botão de WhatsApp some. Us
 anotar quem reservou/comprou; esse campo é só para controle nosso e nunca é exibido no site — mas
 como o repositório é público no GitHub, qualquer pessoa que abrir o código-fonte em
 `lib/listings.ts` consegue ver esse valor.
+
+Ao adicionar itens novos, preencha `dateAdded` com a data do dia (formato `AAAA-MM-DD`). Categorias
+com pelo menos um item adicionado nos últimos 3 dias ganham um selo "Novo" na página inicial —
+o selo some sozinho depois desse prazo, sem precisar editar nada.
 
 ### Fotos
 
