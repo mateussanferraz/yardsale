@@ -1,6 +1,6 @@
 # yardsale
 
-Site da mudança para a Espanha — Mateus e Bella vendem tudo: jogos de tabuleiro, roupas, móveis,
+Site da mudança — estamos nos mudando! Mateus e Bella vendem tudo: jogos de tabuleiro, roupas, móveis,
 sapatos, discos, objetos gerais, cozinha, livros e eletrônicos.
 
 Contato de cada anúncio é feito direto pelo WhatsApp de quem está vendendo (Mateus ou Bella).

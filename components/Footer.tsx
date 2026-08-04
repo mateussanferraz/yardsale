@@ -7,7 +7,7 @@ export function Footer() {
           envio, é só combinar por WhatsApp.
         </p>
         <p className="text-xs">
-          Estamos nos mudando para Barcelona e vendendo o que não vai na mala. Obrigado por dar
+          Estamos nos mudando! Vendendo o que não vai na mala. Obrigado por dar
           um novo lar pras nossas coisas :)
         </p>
       </div>

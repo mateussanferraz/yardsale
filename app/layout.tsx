@@ -17,7 +17,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Mateus e Bella vendem tudo",
   description:
-    "Jogos de tabuleiro, roupas, móveis, sapatos e discos à venda antes da mudança para Barcelona. Retirada perto da Estação Santa Cruz ou envio a combinar.",
+    "Jogos de tabuleiro, roupas, móveis, sapatos e discos à venda — estamos nos mudando! Retirada perto da Estação Santa Cruz ou envio a combinar.",
 };
 
 export default function RootLayout({
