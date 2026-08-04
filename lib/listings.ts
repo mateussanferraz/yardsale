@@ -1083,6 +1083,24 @@ export const LISTINGS: Listing[] = [
     status: "disponivel",
   },
   {
+    id: "cabideiro-banco-sapateira-sams-club",
+    title: "Cabideiro com Banco e Sapateira",
+    category: "moveis",
+    price: 150,
+    brand: "Sam's Club",
+    color: "Madeira e Preto",
+    condition: "Bem conservado",
+    description: "Cabideiro com banco e sapateira, madeira e preto, sem avarias.",
+    photos: [
+      { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/01.webp", alt: "Cabideiro com Banco e Sapateira - foto 1" },
+      { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/02.webp", alt: "Cabideiro com Banco e Sapateira - foto 2" },
+      { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/03.webp", alt: "Cabideiro com Banco e Sapateira - foto 3" },
+      { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/04.webp", alt: "Cabideiro com Banco e Sapateira - foto 4" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
     id: "bota-democrata-marrom-41",
     title: "Bota",
     category: "sapatos",
@@ -2255,6 +2273,25 @@ export const LISTINGS: Listing[] = [
     ],
     seller: "bella",
     status: "vendido",
+  },
+  {
+    id: "inalador-panvel-branco-r-70",
+    title: "Inalador/Nebulizador Panvel",
+    category: "eletronicos",
+    price: 70,
+    brand: "Panvel",
+    color: "Branco",
+    size: "Bivolt (127/220V)",
+    condition: "Bem conservado",
+    description:
+      "Nebulizador/Inalador Compressor NB100.I da Panvel, branco, bivolt. Usado poucas vezes, acompanha máscara adulto e infantil.",
+    photos: [
+      { src: "/images/eletronicos/inalador-panvel-branco-r-70/01.webp", alt: "Inalador/Nebulizador Panvel - foto 1" },
+      { src: "/images/eletronicos/inalador-panvel-branco-r-70/02.webp", alt: "Inalador/Nebulizador Panvel - foto 2" },
+      { src: "/images/eletronicos/inalador-panvel-branco-r-70/03.webp", alt: "Inalador/Nebulizador Panvel - foto 3" },
+    ],
+    seller: "bella",
+    status: "disponivel",
   },
 ];
 
