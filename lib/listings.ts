@@ -806,7 +806,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/moletom-canguru-amsterdam-sem-marca-vermelho-g/03.webp", alt: "Moletom Canguru Amsterdam - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "moletom-twitter-pal-frente-known-issue-preto-com-detalhes-em-branco-g",
@@ -2313,7 +2313,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/inalador-panvel-branco-r-70/03.webp", alt: "Inalador/Nebulizador Panvel - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
 ];
 
