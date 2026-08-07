@@ -112,6 +112,7 @@ export const SELLERS: Record<SellerId, SellerInfo> = {
 
 export type Condition =
   | "Lacrado"
+  | "Nunca usado"
   | "Bem conservado"
   | "Com marcas de uso"
   | "Com defeitos ou problemas";
@@ -1454,7 +1455,7 @@ export const LISTINGS: Listing[] = [
     brand: "Amaro",
     color: "Verde Menta",
     size: "37",
-    condition: "Lacrado",
+    condition: "Nunca usado",
     description: "Sandália da Amaro, verde menta, tamanho 37. Nunca usada, com caixa.",
     photos: [
       { src: "/images/sapatos/sandalia-amaro-verde-menta-37/01.webp", alt: "Sandália - foto 1" },
@@ -1473,7 +1474,7 @@ export const LISTINGS: Listing[] = [
     brand: "Prego",
     color: "Bege",
     size: "37",
-    condition: "Lacrado",
+    condition: "Nunca usado",
     description: "Sandália da Prego, bege, tamanho 37. Nunca usada.",
     photos: [
       { src: "/images/sapatos/sandalia-prego-bege-37/01.webp", alt: "Sandália - foto 1" },
@@ -1492,7 +1493,7 @@ export const LISTINGS: Listing[] = [
     brand: "Oneself",
     color: "Cúrcuma",
     size: "35",
-    condition: "Lacrado",
+    condition: "Nunca usado",
     description: "Sandália da Oneself (C&A), cúrcuma, tamanho 35. Nunca usada, com etiqueta.",
     photos: [
       { src: "/images/sapatos/sandalia-oneself-curcuma-35/01.webp", alt: "Sandália - foto 1" },
@@ -1530,7 +1531,7 @@ export const LISTINGS: Listing[] = [
     brand: "Prego",
     color: "Lilás",
     size: "37",
-    condition: "Lacrado",
+    condition: "Nunca usado",
     description: "Sapato de salto da Prego, lilás, tamanho 37. Nunca usado.",
     photos: [
       { src: "/images/sapatos/sapato-salto-prego-lilas-37/01.webp", alt: "Sapato de Salto - foto 1" },
