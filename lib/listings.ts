@@ -1744,7 +1744,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/espelho-rei-dos-vidros-44cmx64cm-rs40/04.webp", alt: "Espelho - foto 4" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "porta-retrato-westwing-caramelo-r-10",
@@ -2428,7 +2428,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/inalador-panvel-branco-r-70/03.webp", alt: "Inalador/Nebulizador Panvel - foto 3" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
 ];
 
