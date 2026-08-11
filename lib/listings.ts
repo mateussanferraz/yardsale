@@ -775,7 +775,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-thrasher-bordo-vinho-m/03.webp", alt: "Jaqueta - foto 3" },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "jaqueta-uruguay-sem-marca-azul-escuro-g",
@@ -1597,7 +1597,7 @@ export const LISTINGS: Listing[] = [
       },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "criolo-amaro-e-dino",
@@ -1712,7 +1712,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/milton-nascimento/02.webp", alt: "Milton Nascimento - Travessia - foto 2" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "aro-de-pilates-liveup-esportes-laranja-r-20",
@@ -1758,7 +1758,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/porta-retrato-westwing-caramelo-r-10/01.webp", alt: "Porta-Retrato - foto 1" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "quadro-moca-com-brinco-de-perola-ikea-r-20",
@@ -1871,7 +1871,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/luminaria-mesa-cromada-tokstok-r-100/03.webp", alt: "Luminária de Mesa - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "tapete-lavavel-180x100cm",
