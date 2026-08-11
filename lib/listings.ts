@@ -824,7 +824,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/moletom-twitter-pal-frente-known-issue-preto-com-detalhes-em-branco-g/03.webp", alt: "Moletom Twitter PAL Frente - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "moletom-twitter-redbird-champion-vermelho-xg",
@@ -2276,7 +2276,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/mochila-lego-verde-r-150/04.webp", alt: "Mochila Lego - foto 4" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25",
@@ -2361,7 +2361,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/bone-katsukazan-laranja-com-aba-interna-verde-menta/03.webp", alt: "Boné Katsukazan - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "bone-new-era-preto",
