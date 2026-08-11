@@ -1712,7 +1712,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/milton-nascimento/02.webp", alt: "Milton Nascimento - Travessia - foto 2" },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "aro-de-pilates-liveup-esportes-laranja-r-20",
