@@ -1788,7 +1788,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/tapete-de-yoga-sem-marca-lilas-r-30/04.webp", alt: "Tapete de Yoga - foto 4" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "toalha-microfibra-decathlon-azul-r-20",
