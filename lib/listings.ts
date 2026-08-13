@@ -1613,7 +1613,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/criolo/02.webp", alt: "Criolo, Amaro e Dino - foto 2" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "dona-onete",
@@ -1628,7 +1628,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/dona-onete/02.webp", alt: "Dona Onete - Feitiço Caboclo - foto 2" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "evangelion-finally",
