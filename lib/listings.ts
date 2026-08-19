@@ -1803,7 +1803,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/toalha-microfibra-decathlon-azul-r-20/02.webp", alt: "Toalha de Microfibra - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "toalha-microfibra-decathlon-roxa-r-20",
@@ -1818,7 +1818,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/toalha-microfibra-decathlon-roxa-r-20/02.webp", alt: "Toalha de Microfibra - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "colchao-inflavel-casal-mor-life-r-100",
@@ -2295,7 +2295,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25/05.webp", alt: "Óculos de Sol Colorado - foto 5" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "bone-adidas-azul",
@@ -2312,7 +2312,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/bone-adidas-azul/03.webp", alt: "Boné Adidas - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "bone-age-of-dreams-preto-com-aba-estampada",
@@ -2497,6 +2497,22 @@ export const LISTINGS: Listing[] = [
     photos: [
       { src: "/images/livros/livro-o-livro-de-ouro-da-mitologia-thomas-bulfinch-r-25/01.webp", alt: "O Livro de Ouro da Mitologia - foto 1" },
       { src: "/images/livros/livro-o-livro-de-ouro-da-mitologia-thomas-bulfinch-r-25/02.webp", alt: "O Livro de Ouro da Mitologia - foto 2" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "espelho-160x107-studio-de-ballet-r-600",
+    dateAdded: "2026-08-18",
+    title: "Espelho 160x107",
+    category: "moveis",
+    price: 600,
+    condition: "Bem conservado",
+    description:
+      "Espelho 160x107cm, acabamento lapidado, sem avarias. Comprado de um studio de ballet. Retirada combinada.",
+    photos: [
+      { src: "/images/moveis/espelho-160x107-studio-de-ballet-r-600/01.webp", alt: "Espelho 160x107 - foto 1" },
+      { src: "/images/moveis/espelho-160x107-studio-de-ballet-r-600/02.webp", alt: "Espelho 160x107 - foto 2" },
     ],
     seller: "bella",
     status: "disponivel",
