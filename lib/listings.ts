@@ -2517,6 +2517,40 @@ export const LISTINGS: Listing[] = [
     seller: "bella",
     status: "disponivel",
   },
+  {
+    id: "panela-de-wok-gobos-aco-carbonizado-r-100",
+    dateAdded: "2026-08-18",
+    title: "Panela de Wok",
+    category: "cozinha",
+    price: 100,
+    brand: "Gobos",
+    condition: "Com marcas de uso",
+    description:
+      "Panela de wok tradicional chinesa da Gobos, aço carbonizado. Com marcas de uso, precisa curar novamente.",
+    photos: [
+      { src: "/images/cozinha/panela-de-wok-gobos-aco-carbonizado-r-100/01.webp", alt: "Panela de Wok - foto 1" },
+      { src: "/images/cozinha/panela-de-wok-gobos-aco-carbonizado-r-100/02.webp", alt: "Panela de Wok - foto 2" },
+      { src: "/images/cozinha/panela-de-wok-gobos-aco-carbonizado-r-100/03.webp", alt: "Panela de Wok - foto 3" },
+    ],
+    seller: "mateus",
+    status: "disponivel",
+  },
+  {
+    id: "sandra-sa-vale-tudo",
+    dateAdded: "2026-08-18",
+    title: "Sandra Sá - Vale Tudo",
+    category: "discos",
+    price: 195,
+    condition: "Lacrado",
+    year: 2026,
+    description: "Vinil de Sandra Sá, Vale Tudo. Novo e lacrado.",
+    photos: [
+      { src: "/images/discos/sandra-sa-vale-tudo/01.webp", alt: "Sandra Sá - Vale Tudo - foto 1" },
+      { src: "/images/discos/sandra-sa-vale-tudo/02.webp", alt: "Sandra Sá - Vale Tudo - foto 2" },
+    ],
+    seller: "mateus",
+    status: "disponivel",
+  },
 ];
 
 export function getListingsByCategory(slug: CategorySlug): Listing[] {
