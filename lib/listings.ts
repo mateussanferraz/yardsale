@@ -1017,7 +1017,8 @@ export const LISTINGS: Listing[] = [
     color: "Preta",
     condition: "Bem conservado",
     tags: [SEPTEMBER_DELIVERY_TAG],
-    description: "Cadeira de escritório Uni, da Flexform, preta, com braços ajustáveis e rodízios.",
+    description:
+      "Cadeira de escritório Uni, da Flexform, preta, com braços ajustáveis e rodízios. Será limpa antes da entrega.",
     photos: [
       { src: "/images/moveis/cadeira-uni-flexform-preta-r-450/01.webp", alt: "Cadeira Uni - foto 1" },
       { src: "/images/moveis/cadeira-uni-flexform-preta-r-450/02.webp", alt: "Cadeira Uni - foto 2" },
