@@ -1039,7 +1039,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/moveis/prateleiras-vinis-quadros-brancas/01.webp", alt: "2 Prateleiras para Vinis/Quadros - foto 1" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "estante-jogos-serena-nogueira-caiena",
