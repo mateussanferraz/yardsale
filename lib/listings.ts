@@ -1111,8 +1111,8 @@ export const LISTINGS: Listing[] = [
     condition: "Bem conservado",
     description: "Cabideiro com banco e sapateira, madeira e preto, sem avarias.",
     photos: [
-      { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/01.webp", alt: "Cabideiro com Banco e Sapateira - foto 1" },
-      { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/02.webp", alt: "Cabideiro com Banco e Sapateira - foto 2" },
+      { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/02.webp", alt: "Cabideiro com Banco e Sapateira - foto 1" },
+      { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/01.webp", alt: "Cabideiro com Banco e Sapateira - foto 2" },
       { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/03.webp", alt: "Cabideiro com Banco e Sapateira - foto 3" },
       { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/04.webp", alt: "Cabideiro com Banco e Sapateira - foto 4" },
     ],
