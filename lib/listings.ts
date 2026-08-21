@@ -2552,6 +2552,43 @@ export const LISTINGS: Listing[] = [
     seller: "mateus",
     status: "disponivel",
   },
+  {
+    id: "box-colchao-casal-probel-maximus-plus-r-1350",
+    dateAdded: "2026-08-20",
+    title: "Box + Colchão de Casal",
+    category: "moveis",
+    price: 1350,
+    brand: "Probel",
+    condition: "Bem conservado",
+    description:
+      "Box com revestimento em camurça e colchão de casal Probel Maximus Plus, molejo pocket de alta densidade, 1,38m x 1,88m. Pouco uso, estava no quarto de hóspedes. R$1350 pelo conjunto — também podem ser vendidos separadamente, consulte valores.",
+    photos: [
+      { src: "/images/moveis/box-colchao-casal-probel-maximus-plus-r-1350/01.webp", alt: "Box + Colchão de Casal - foto 1" },
+      { src: "/images/moveis/box-colchao-casal-probel-maximus-plus-r-1350/02.webp", alt: "Box + Colchão de Casal - foto 2" },
+      { src: "/images/moveis/box-colchao-casal-probel-maximus-plus-r-1350/03.webp", alt: "Box + Colchão de Casal - foto 3" },
+      { src: "/images/moveis/box-colchao-casal-probel-maximus-plus-r-1350/04.webp", alt: "Box + Colchão de Casal - foto 4" },
+      { src: "/images/moveis/box-colchao-casal-probel-maximus-plus-r-1350/05.webp", alt: "Box + Colchão de Casal - foto 5" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "escrivaninha-em-l-madesa-branco-e-madeira-r-300",
+    dateAdded: "2026-08-20",
+    title: "Escrivaninha em L",
+    category: "moveis",
+    price: 300,
+    brand: "Madesa",
+    color: "Branco e madeira",
+    condition: "Bem conservado",
+    description:
+      "Escrivaninha em L da Madesa, branco e madeira, com nichos e três gavetas. 136cm + 153cm de extensão, 77cm de altura, 60cm de profundidade. Pouco uso. Retirada combinada.",
+    photos: [
+      { src: "/images/moveis/escrivaninha-em-l-madesa-branco-e-madeira-r-300/01.webp", alt: "Escrivaninha em L - foto 1" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
 ];
 
 export function getListingsByCategory(slug: CategorySlug): Listing[] {
