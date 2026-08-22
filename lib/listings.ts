@@ -997,18 +997,6 @@ export const LISTINGS: Listing[] = [
     status: "disponivel",
   },
   {
-    id: "mesa-centro",
-    title: "Mesa de centro de madeira",
-    category: "moveis",
-    price: 250,
-    condition: "Com marcas de uso",
-    description:
-      "Mesa de centro maciça, 90x50cm. Alguns riscos de uso normal. Retirada combinada.",
-    photos: [],
-    seller: "bella",
-    status: "disponivel",
-  },
-  {
     id: "cadeira-uni-flexform-preta-r-450",
     title: "Cadeira Uni",
     category: "moveis",
