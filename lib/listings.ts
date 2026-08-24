@@ -2489,7 +2489,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-o-livro-de-ouro-da-mitologia-thomas-bulfinch-r-25/02.webp", alt: "O Livro de Ouro da Mitologia - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "espelho-160x107-studio-de-ballet-r-600",
