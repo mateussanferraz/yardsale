@@ -265,7 +265,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/daybreak/06.webp", alt: "Daybreak - foto 6" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "harmonies",
@@ -352,7 +352,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/ascension/03.webp", alt: "Ascension - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "cards-against-humanity",
