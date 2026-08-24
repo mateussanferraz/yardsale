@@ -369,7 +369,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/cards-against-humanity/02.webp", alt: "Cards Against Humanity - foto 2" },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "galaxy-trucker",
@@ -423,7 +423,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/jogos-de-tabuleiro/coup/03.webp", alt: "Coup - foto 3" },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "modern-art",
@@ -2213,7 +2213,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/eletronicos/monitor-acer-vg240y-preto-r-400/03.webp", alt: "Monitor Acer VG240Y - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "vitrola-sony-ps-lx310bt-preta-r-1500",
