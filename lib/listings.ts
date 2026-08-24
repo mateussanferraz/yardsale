@@ -125,6 +125,7 @@ export interface Photo {
 export type ListingStatus = "disponivel" | "reservado" | "vendido";
 
 export const SEPTEMBER_DELIVERY_TAG = "Entrega apenas em setembro";
+export const DONATION_TAG = "Doação";
 
 export interface Listing {
   id: string;
@@ -824,7 +825,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/moletom-twitter-pal-frente-known-issue-preto-com-detalhes-em-branco-g/03.webp", alt: "Moletom Twitter PAL Frente - foto 3" },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "moletom-twitter-redbird-champion-vermelho-xg",
@@ -2573,6 +2574,61 @@ export const LISTINGS: Listing[] = [
       "Escrivaninha em L da Madesa, branco e madeira, com nichos e três gavetas. 136cm + 153cm de extensão, 77cm de altura, 60cm de profundidade. Pouco uso. Retirada combinada.",
     photos: [
       { src: "/images/moveis/escrivaninha-em-l-madesa-branco-e-madeira-r-300/01.webp", alt: "Escrivaninha em L - foto 1" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "coqueteleira-dynasty-aco-inox-r-60",
+    dateAdded: "2026-08-24",
+    title: "Coqueteleira Dynasty",
+    category: "cozinha",
+    price: 60,
+    brand: "Dynasty",
+    condition: "Nunca usado",
+    description:
+      "Coqueteleira em aço inox da Dynasty, 3 peças, 650ml, com receitas de drinks impressas no corpo. Nunca usada, na caixa.",
+    photos: [
+      { src: "/images/cozinha/coqueteleira-dynasty-aco-inox-r-60/01.webp", alt: "Coqueteleira Dynasty - foto 1" },
+      { src: "/images/cozinha/coqueteleira-dynasty-aco-inox-r-60/02.webp", alt: "Coqueteleira Dynasty - foto 2" },
+      { src: "/images/cozinha/coqueteleira-dynasty-aco-inox-r-60/03.webp", alt: "Coqueteleira Dynasty - foto 3" },
+      { src: "/images/cozinha/coqueteleira-dynasty-aco-inox-r-60/04.webp", alt: "Coqueteleira Dynasty - foto 4" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "kit-copos-caldinho-marrom-ceramica-r-50",
+    dateAdded: "2026-08-24",
+    title: "Kit Copos de Caldinho",
+    category: "cozinha",
+    price: 50,
+    color: "Marrom",
+    condition: "Nunca usado",
+    description:
+      "Kit com 4 copos de caldinho em cerâmica, marrom, com suporte em aço. Nunca usados.",
+    photos: [
+      { src: "/images/cozinha/kit-copos-caldinho-marrom-ceramica-r-50/01.webp", alt: "Kit Copos de Caldinho - foto 1" },
+      { src: "/images/cozinha/kit-copos-caldinho-marrom-ceramica-r-50/02.webp", alt: "Kit Copos de Caldinho - foto 2" },
+      { src: "/images/cozinha/kit-copos-caldinho-marrom-ceramica-r-50/03.webp", alt: "Kit Copos de Caldinho - foto 3" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "estante-etna-branca-com-avarias-doacao",
+    dateAdded: "2026-08-24",
+    title: "Estante Etna",
+    category: "moveis",
+    color: "Branca",
+    condition: "Com defeitos ou problemas",
+    tags: [DONATION_TAG],
+    description:
+      "Estante branca da Etna, com avarias (lascada em um dos cantos da base). Disponível para doação, quem retirar leva. Retirada combinada.",
+    photos: [
+      { src: "/images/moveis/estante-etna-branca-com-avarias-doacao/01.webp", alt: "Estante Etna - foto 1" },
+      { src: "/images/moveis/estante-etna-branca-com-avarias-doacao/02.webp", alt: "Estante Etna - foto 2" },
+      { src: "/images/moveis/estante-etna-branca-com-avarias-doacao/03.webp", alt: "Estante Etna - foto 3" },
     ],
     seller: "bella",
     status: "disponivel",

@@ -1,10 +1,11 @@
-import { Listing, SELLERS, SEPTEMBER_DELIVERY_TAG } from "@/lib/listings";
+import { Listing, SELLERS, SEPTEMBER_DELIVERY_TAG, DONATION_TAG } from "@/lib/listings";
 import { formatPrice } from "@/lib/format";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { ListingGallery } from "./ListingGallery";
 
 export function ListingCard({ listing }: { listing: Listing }) {
   const seller = SELLERS[listing.seller];
+  const isDonation = listing.tags?.includes(DONATION_TAG) ?? false;
 
   return (
     <article
@@ -27,7 +28,7 @@ export function ListingCard({ listing }: { listing: Listing }) {
             )}
           </div>
           <span className="shrink-0 font-display text-lg text-accent">
-            {formatPrice(listing.price)}
+            {isDonation ? "Doação" : formatPrice(listing.price)}
           </span>
         </div>
 
@@ -65,23 +66,36 @@ export function ListingCard({ listing }: { listing: Listing }) {
               {language}
             </span>
           ))}
-          {listing.tags?.map((tag) =>
-            tag === SEPTEMBER_DELIVERY_TAG ? (
-              <span
-                key={tag}
-                className="w-fit rounded-full bg-amber-500 px-2.5 py-1 text-xs font-semibold text-white"
-              >
-                {tag}
-              </span>
-            ) : (
+          {listing.tags?.map((tag) => {
+            if (tag === SEPTEMBER_DELIVERY_TAG) {
+              return (
+                <span
+                  key={tag}
+                  className="w-fit rounded-full bg-amber-500 px-2.5 py-1 text-xs font-semibold text-white"
+                >
+                  {tag}
+                </span>
+              );
+            }
+            if (tag === DONATION_TAG) {
+              return (
+                <span
+                  key={tag}
+                  className="w-fit rounded-full bg-emerald-500 px-2.5 py-1 text-xs font-semibold text-white"
+                >
+                  {tag}
+                </span>
+              );
+            }
+            return (
               <span
                 key={tag}
                 className="w-fit rounded-full bg-accent/10 px-2.5 py-1 text-xs font-medium text-accent"
               >
                 {tag}
               </span>
-            ),
-          )}
+            );
+          })}
         </div>
 
         <p className="text-sm leading-relaxed text-muted-foreground">{listing.description}</p>
