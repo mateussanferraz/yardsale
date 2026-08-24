@@ -707,7 +707,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-impermeavel-beats-ambev-azul-e-rosa-g/02.webp", alt: "Jaqueta Impermeável - foto 2" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "jaqueta-impermeavel-decathlon-azul-g",
@@ -841,7 +841,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/moletom-twitter-redbird-champion-vermelho-xg/03.webp", alt: "Moletom Twitter Redbird - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "sueter-budweiser-ambev-vermelho-m",
@@ -925,7 +925,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/camisa-manga-longa-mango-grafite-m/03.webp", alt: "Camisa Manga Longa - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "jaqueta-hering-branca-m",
@@ -1068,7 +1068,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/moveis/estante-vinil-serena-cumaru/04.webp", alt: "Ficha técnica da estante (Serena Estantes)" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "rack-terracota-pes-madeira-macica",
@@ -1632,7 +1632,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/evangelion/02.webp", alt: "Evangelion Finally - foto 2" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "gabriela-leite",
@@ -1841,7 +1841,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/luminaria-mapu-branca-r-100/03.webp", alt: "Luminária Mapu - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "luminaria-mesa-cromada-tokstok-r-100",
@@ -1893,7 +1893,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/cacarola-ferro-fundido-fissler-preta-r-250/05.webp", alt: "Caçarola de Ferro Fundido - foto 5" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "moedor-de-cafe-grundig-cm3260-preto-r-100",
@@ -2265,7 +2265,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/mochila-lego-verde-r-150/04.webp", alt: "Mochila Lego - foto 4" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25",
@@ -2284,7 +2284,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/oculos-de-sol-colorado-lentes-pretas-com-armacao-florida-r-25/05.webp", alt: "Óculos de Sol Colorado - foto 5" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "bone-adidas-azul",
@@ -2301,7 +2301,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/bone-adidas-azul/03.webp", alt: "Boné Adidas - foto 3" },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "bone-age-of-dreams-preto-com-aba-estampada",
@@ -2333,7 +2333,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/bone-choke-tropical-branco-com-aba-estampada/02.webp", alt: "Boné Choke Tropical - foto 2" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "bone-katsukazan-laranja-com-aba-interna-verde-menta",
@@ -2350,7 +2350,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/bone-katsukazan-laranja-com-aba-interna-verde-menta/03.webp", alt: "Boné Katsukazan - foto 3" },
     ],
     seller: "mateus",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "bone-new-era-preto",
@@ -2522,7 +2522,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/panela-de-wok-gobos-aco-carbonizado-r-100/03.webp", alt: "Panela de Wok - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "sandra-sa-vale-tudo",
