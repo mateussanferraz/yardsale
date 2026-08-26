@@ -1107,7 +1107,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/moveis/cabideiro-banco-sapateira-sams-club/04.webp", alt: "Cabideiro com Banco e Sapateira - foto 4" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "bota-democrata-marrom-41",
