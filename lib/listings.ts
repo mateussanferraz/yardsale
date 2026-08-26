@@ -2633,6 +2633,52 @@ export const LISTINGS: Listing[] = [
     seller: "bella",
     status: "disponivel",
   },
+  {
+    id: "claquete-hollywood-studios-disney-r-35",
+    dateAdded: "2026-08-26",
+    title: "Claquete Hollywood Studios",
+    category: "objetos-gerais",
+    price: 35,
+    condition: "Bem conservado",
+    description: "Claquete de cinema comprada nos Hollywood Studios, na Disney. Ótimas condições.",
+    photos: [
+      { src: "/images/objetos-gerais/claquete-hollywood-studios-disney-r-35/01.webp", alt: "Claquete Hollywood Studios - foto 1" },
+      { src: "/images/objetos-gerais/claquete-hollywood-studios-disney-r-35/02.webp", alt: "Claquete Hollywood Studios - foto 2" },
+      { src: "/images/objetos-gerais/claquete-hollywood-studios-disney-r-35/03.webp", alt: "Claquete Hollywood Studios - foto 3" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "mousepad-belkin-com-almofadinha-r-60",
+    dateAdded: "2026-08-26",
+    title: "Mousepad com Almofadinha",
+    category: "objetos-gerais",
+    price: 60,
+    brand: "Belkin",
+    description: "Mousepad com apoio de pulso (almofadinha), da Belkin. Novo custa 300 reais.",
+    photos: [
+      { src: "/images/objetos-gerais/mousepad-belkin-com-almofadinha-r-60/01.webp", alt: "Mousepad com Almofadinha - foto 1" },
+      { src: "/images/objetos-gerais/mousepad-belkin-com-almofadinha-r-60/02.webp", alt: "Mousepad com Almofadinha - foto 2" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "tacas-de-vinho-vidro-2-unidades-r-10",
+    dateAdded: "2026-08-26",
+    title: "Taças de Vinho",
+    category: "cozinha",
+    price: 10,
+    color: "Vidro",
+    description: "Duas taças de vinho, sem marca, vidro.",
+    photos: [
+      { src: "/images/cozinha/tacas-de-vinho-vidro-2-unidades-r-10/01.webp", alt: "Taças de Vinho - foto 1" },
+      { src: "/images/cozinha/tacas-de-vinho-vidro-2-unidades-r-10/02.webp", alt: "Taças de Vinho - foto 2" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
 ];
 
 export function getListingsByCategory(slug: CategorySlug): Listing[] {
