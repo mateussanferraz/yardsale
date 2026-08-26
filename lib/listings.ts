@@ -1088,7 +1088,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/moveis/rack-terracota-pes-madeira-macica/04.webp", alt: "Ficha técnica do rack com dimensões (referência do fabricante)" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "cabideiro-banco-sapateira-sams-club",
@@ -2675,6 +2675,22 @@ export const LISTINGS: Listing[] = [
     photos: [
       { src: "/images/cozinha/tacas-de-vinho-vidro-2-unidades-r-10/01.webp", alt: "Taças de Vinho - foto 1" },
       { src: "/images/cozinha/tacas-de-vinho-vidro-2-unidades-r-10/02.webp", alt: "Taças de Vinho - foto 2" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "tacas-de-champagne-vidro-2-unidades-r-10",
+    dateAdded: "2026-08-26",
+    title: "Taças de Champagne",
+    category: "cozinha",
+    price: 10,
+    color: "Vidro",
+    condition: "Bem conservado",
+    description: "Duas taças de champagne, sem marca, vidro, sem avarias.",
+    photos: [
+      { src: "/images/cozinha/tacas-de-champagne-vidro-2-unidades-r-10/01.webp", alt: "Taças de Champagne - foto 1" },
+      { src: "/images/cozinha/tacas-de-champagne-vidro-2-unidades-r-10/02.webp", alt: "Taças de Champagne - foto 2" },
     ],
     seller: "bella",
     status: "disponivel",
