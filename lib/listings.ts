@@ -2631,7 +2631,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/moveis/estante-etna-branca-com-avarias-doacao/03.webp", alt: "Estante Etna - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "reservado",
   },
   {
     id: "claquete-hollywood-studios-disney-r-35",
