@@ -1748,7 +1748,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/porta-retrato-westwing-caramelo-r-10/01.webp", alt: "Porta-Retrato - foto 1" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "quadro-moca-com-brinco-de-perola-ikea-r-20",
@@ -1778,7 +1778,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/tapete-de-yoga-sem-marca-lilas-r-30/04.webp", alt: "Tapete de Yoga - foto 4" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "toalha-microfibra-decathlon-azul-r-20",
@@ -1793,7 +1793,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/toalha-microfibra-decathlon-azul-r-20/02.webp", alt: "Toalha de Microfibra - foto 2" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "toalha-microfibra-decathlon-roxa-r-20",
@@ -1808,7 +1808,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/toalha-microfibra-decathlon-roxa-r-20/02.webp", alt: "Toalha de Microfibra - foto 2" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "colchao-inflavel-casal-mor-life-r-100",
@@ -1861,7 +1861,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/objetos-gerais/luminaria-mesa-cromada-tokstok-r-100/03.webp", alt: "Luminária de Mesa - foto 3" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "tapete-lavavel-180x100cm",
