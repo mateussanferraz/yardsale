@@ -2811,6 +2811,38 @@ export const LISTINGS: Listing[] = [
     seller: "bella",
     status: "disponivel",
   },
+  {
+    id: "shoulder-bag-nike-azul-r-80",
+    dateAdded: "2026-08-27",
+    title: "Shoulder Bag Nike",
+    category: "acessorios",
+    price: 80,
+    brand: "Nike",
+    color: "Azul",
+    description: "Shoulder bag da Nike, azul.",
+    photos: [
+      { src: "/images/acessorios/shoulder-bag-nike-azul-r-80/01.webp", alt: "Shoulder Bag Nike - foto 1" },
+      { src: "/images/acessorios/shoulder-bag-nike-azul-r-80/02.webp", alt: "Shoulder Bag Nike - foto 2" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
+  {
+    id: "shoulder-bag-starter-vermelha-r-50",
+    dateAdded: "2026-08-27",
+    title: "Shoulder Bag Starter",
+    category: "acessorios",
+    price: 50,
+    brand: "Starter",
+    color: "Vermelha",
+    description: "Shoulder bag da Starter, vermelha.",
+    photos: [
+      { src: "/images/acessorios/shoulder-bag-starter-vermelha-r-50/01.webp", alt: "Shoulder Bag Starter - foto 1" },
+      { src: "/images/acessorios/shoulder-bag-starter-vermelha-r-50/02.webp", alt: "Shoulder Bag Starter - foto 2" },
+    ],
+    seller: "bella",
+    status: "disponivel",
+  },
 ];
 
 export function getListingsByCategory(slug: CategorySlug): Listing[] {
