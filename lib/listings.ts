@@ -459,7 +459,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/blazer-grafite-48r/03.webp", alt: "Blazer - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "blazer-pentel-gelo-tamanho-50",
@@ -711,23 +711,6 @@ export const LISTINGS: Listing[] = [
     status: "vendido",
   },
   {
-    id: "jaqueta-impermeavel-decathlon-azul-g",
-    title: "Jaqueta Impermeável",
-    category: "roupas",
-    brand: "Decathlon",
-    price: 90,
-    color: "Azul",
-    size: "G",
-    description: "Jaqueta Impermeável da Decathlon, azul, tamanho G.",
-    photos: [
-      { src: "/images/roupas/jaqueta-impermeavel-decathlon-azul-g/01.webp", alt: "Jaqueta Impermeável - foto 1" },
-      { src: "/images/roupas/jaqueta-impermeavel-decathlon-azul-g/02.webp", alt: "Jaqueta Impermeável - foto 2" },
-      { src: "/images/roupas/jaqueta-impermeavel-decathlon-azul-g/03.webp", alt: "Jaqueta Impermeável - foto 3" },
-    ],
-    seller: "mateus",
-    status: "disponivel",
-  },
-  {
     id: "jaqueta-moletom-gap-preto-m",
     title: "Jaqueta Moletom",
     category: "roupas",
@@ -742,7 +725,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/roupas/jaqueta-moletom-gap-preto-m/03.webp", alt: "Jaqueta Moletom - foto 3" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "jaqueta-primaverasounds-2022-pull-bear-branca-com-detalhes-em-azul-m",
@@ -1453,7 +1436,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/sandalia-amaro-verde-menta-37/03.webp", alt: "Sandália - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "sandalia-prego-bege-37",
@@ -1472,7 +1455,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/sandalia-prego-bege-37/03.webp", alt: "Sandália - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "sandalia-oneself-curcuma-35",
@@ -1491,7 +1474,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/sandalia-oneself-curcuma-35/03.webp", alt: "Sandália - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "sapato-ana-mello-bege-36",
@@ -1529,7 +1512,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/sapatos/sapato-salto-prego-lilas-37/03.webp", alt: "Sapato de Salto - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "tamanco-anabela-moleca-azul-claro-37",
@@ -2248,7 +2231,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/acessorios/bolsa-mango-bolsa-com-alca-de-corrente-vinho-r-50/04.webp", alt: "Bolsa com Alça de Corrente - foto 4" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "mochila-lego-verde-r-150",
@@ -2489,7 +2472,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/livros/livro-o-livro-de-ouro-da-mitologia-thomas-bulfinch-r-25/02.webp", alt: "O Livro de Ouro da Mitologia - foto 2" },
     ],
     seller: "bella",
-    status: "reservado",
+    status: "vendido",
   },
   {
     id: "espelho-160x107-studio-de-ballet-r-600",
@@ -2539,7 +2522,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/discos/sandra-sa-vale-tudo/02.webp", alt: "Sandra Sá - Vale Tudo - foto 2" },
     ],
     seller: "mateus",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "box-colchao-casal-probel-maximus-plus-r-1350",
@@ -2613,7 +2596,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/kit-copos-caldinho-marrom-ceramica-r-50/03.webp", alt: "Kit Copos de Caldinho - foto 3" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "estante-etna-branca-com-avarias-doacao",
@@ -2677,7 +2660,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/tacas-de-vinho-vidro-2-unidades-r-10/02.webp", alt: "Taças de Vinho - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "tacas-de-champagne-vidro-2-unidades-r-10",
@@ -2693,7 +2676,7 @@ export const LISTINGS: Listing[] = [
       { src: "/images/cozinha/tacas-de-champagne-vidro-2-unidades-r-10/02.webp", alt: "Taças de Champagne - foto 2" },
     ],
     seller: "bella",
-    status: "disponivel",
+    status: "vendido",
   },
   {
     id: "moldura-20x25-tokyo-design-r-5",
